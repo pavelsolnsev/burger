@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url("../fonts/Gagalin-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Gagalin-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff"), url("../fonts/Gagalin-Regular.ttf") format("truetype"), url("../fonts/Gagalin-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Lifehack Medium';
+  src: url("../fonts/Lifehack Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lifehack Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lifehack Medium.woff2") format("woff2"), url("../fonts/Lifehack Medium.woff") format("woff"), url("../fonts/Lifehack Medium.ttf") format("truetype"), url("../fonts/Lifehack Medium.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+/*# sourceMappingURL=fonts.css.map */
