@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACP,UAAU,EAAE,6DAA+D",
+"sources": ["burger.scss"],
+"names": [],
+"file": "burger.css"
+}

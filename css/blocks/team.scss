@@ -6,10 +6,13 @@
 .block {
 	width: 50%;
 	position: absolute;
-	height: 100%;
-	right: 0;
-	background-color: rgba(51, 51, 51, 0.92);
+	top: 0;
+  	bottom: 0;
+ 	right: 0;
+	background: rgba(51, 51, 51, 0.92);
 	padding: 113px 0 146px 98px;
+	display: flex;
+ 	flex-direction: column;
 }
 
 .block-info__communications {
@@ -17,13 +20,27 @@
 }
 
 .block-info__title {
-	color: #f9b43b;
+	color: $yellow;
 	margin-bottom: 53px;
 }
 
 .block-info__name {
 	color: #fff;
 	font-family: 'Gagalin-Regular';
+	display: flex;
+	align-items: center;
+}
+
+.block-info__name {
+	margin-bottom: 37px;
+
+	&:before {
+		content: '';
+		border: 5px solid transparent;
+		border-bottom: 5px solid $yellow;
+		display: inline-block;
+    	margin-right: 10px;
+	}
 }
 
 .block-info__photo {
@@ -61,16 +78,16 @@
 	display: block;
 }
 
-.block-info__name {
-	margin-bottom: 37px;
+.block-info__communications_active {
+  .block-info__name {
+    color: $yellow;
 
-	&:before {
-		content: '';
-		border: 5px solid transparent;
-		border-bottom: 5px solid #f9b43b;
-		display: inline-block;
-    	margin-right: 10px;
-	}
+    &:before {
+       transform: rotate(-180deg);
+    }
+  }
+
+  .block-info__photo {
+   
+  }
 }
-
-

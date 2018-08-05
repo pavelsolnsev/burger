@@ -1,0 +1,27 @@
+.marketing {
+  background: #efe9e6 url(../img/bg.jpg) 0 0 no-repeat;
+  background-size: cover; }
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+.marketing-title {
+  margin: 0 auto 56px auto; }
+
+.info__services {
+  text-align: center;
+  width: 300px;
+  margin: 0 10px; }
+
+.info__title {
+  font-size: 24px;
+  font-family: 'Lifehack Medium';
+  margin: 38px 0 23px;
+  line-height: 1.2em; }
+
+.info__text {
+  font-size: 14px;
+  font-weight: 500; }
+
+/*# sourceMappingURL=marketing.css.map */

@@ -1,0 +1,83 @@
+.header {
+  background: #000 url(../img/fon-bg.jpg) center center/cover no-repeat; }
+
+.hero__container {
+  justify-content: flex-start; }
+
+.navigation {
+  padding: 12px 0; }
+
+.menu {
+  margin-left: 30px; }
+
+.menu__link {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 14px;
+  font-weight: 500; }
+  .menu__link:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-left: 15px; }
+
+.menu__item:last-child .menu__link:after {
+  display: none; }
+
+.offer {
+  flex: 0.8; }
+
+.offer__icon {
+  position: relative;
+  margin-right: 12px; }
+
+.offer__info {
+  padding-top: 49px; }
+
+.offer__title {
+  color: #f9b43b; }
+  .offer__title span {
+    font-size: 65px;
+    color: #fff;
+    font-family: 'Lifehack Medium';
+    line-height: 1em;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: -0.025em; }
+
+.arrow {
+  position: absolute;
+  bottom: 6%;
+  left: 50%; }
+
+.fixed-menu {
+  position: fixed;
+  top: 101px;
+  right: 44px; }
+
+.fixed-menu__item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer; }
+  .fixed-menu__item:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%; }
+  .fixed-menu__item:hover {
+    border: 1px solid #ffffff; }
+
+/*# sourceMappingURL=hero.css.map */

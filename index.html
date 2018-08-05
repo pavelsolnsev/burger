@@ -2,19 +2,22 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<title>Document</title>
 	<meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css" integrity="sha384-KtmfosZaF4BaDBojD9RXBSrq5pNEO79xGiggBxf8tsX+w2dBRpVW5o0BPto2Rb2F" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css" integrity="sha384-8WwquHbb2jqa7gKWSoAwbJBV2Q+/rQRss9UXL5wlvXOZfSodONmVnifo/+5xJIWX" crossorigin="anonymous">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
 <body>
 	 <div class="wrapper">
-		<header class="header hero">
+		<section class="section hero">
 			<div class="container hero__container">
-				<div class="navigation d-flex center space-between">
+				<header class="header d-flex center space-between">
 					<div class="logo">
 						<img src="img/logo.png" alt="logo">
 					</div>
@@ -60,7 +63,7 @@
 					<button class="button btn">   
 						Заказать
 					</button>
-				</div>
+				</header>
 				<div class="offer d-flex center">
 					<div class="offer__icon">
 						<img src="img/burger.png" alt="burger">
@@ -75,7 +78,7 @@
 					<img src="img/arrow-scroll.png" alt="arrow">
 				</a>
 			</div>
-		</header>
+		</section>
 		<section class="section marketing">
 			<div class="container">
 				<div class="wrap">
@@ -121,10 +124,10 @@
 						Команда
 					</h1>
 					<div class="block-info__accordeon">
-						<div class="block-info__communications block-info__communications_window">
-							<div class="block-info__name">
+						<div class="block-info__communications block-info__communications_active">
+							<a href="#" class="block-info__name">
 								Дэниэл Редклиф
-							</div>
+							</a> 
 							<div class="block-info__photo">
 								<div class="block-info__icon">
 									<img src="img/accordeon.png" alt="operator" class="block-info__img">
@@ -140,9 +143,9 @@
 							</div>
 						</div>
 						<div class="block-info__communications">
-							<div class="block-info__name">
+							<a href="#" class="block-info__name">
 								Ричард Джеймс
-							</div>
+							</a> 
 							<div class="block-info__photo">
 								<div class="block-info__icon">
 									<img src="img/accordeon.png" alt="operator" class="block-info__img">
@@ -158,9 +161,9 @@
 							</div>
 						</div>
 						<div class="block-info__communications">
-							<div class="block-info__name">
+							<a href="#" class="block-info__name">
 								Джейк Финн
-							</div>
+							</a> 
 							<div class="block-info__photo">
 								<div class="block-info__icon">
 									<img src="img/accordeon.png" alt="operator" class="block-info__img">
@@ -176,9 +179,9 @@
 							</div>
 						</div>
 						<div class="block-info__communications">
-							<div class="block-info__name">
+							<a href="#" class="block-info__name">
 								Николай Иванов
-							</div>
+							</a> 
 							<div class="block-info__photo">
 								<div class="block-info__icon">
 									<img src="img/accordeon.png" alt="operator" class="block-info__img">
@@ -318,11 +321,145 @@
 		</section>
 		<section class="section order">
 			<div class="container">
-				
+				<h1 class="order-title">
+					Закажите доставку
+				</h1>
+				<form action="#" class="form">
+					<div class="form__order d-flex">
+						<div class="form__order-col">
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">
+										Имя
+									</div>
+									<input class="form__input" name="name" type="text" placeholder="">
+								</label>
+								<label class="form__block">
+									<div class="form__title">
+										Телефон
+									</div>
+									<input class="form__input" name="phone" type="text" placeholder="">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">
+										Улица
+									</div>
+									<input class="form__input" name="street" type="text" placeholder="">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">
+										Дом
+									</div>
+									<input class="form__input" name="home" type="text" placeholder="">
+								</label>
+								<label class="form__block">
+									<div class="form__title">
+										Корпус
+									</div>
+									<input class="form__input" name="part" type="text" placeholder="">
+								</label>
+								<label class="form__block">
+									<div class="form__title">
+										Квартира
+									</div>
+									<input class="form__input" name="appt" type="text" placeholder="">
+								</label>
+								<label class="form__block">
+									<div class="form__title">
+										Этаж
+									</div>
+									<input class="form__input" name="floor" type="text" placeholder="">
+								</label>
+							</div>
+						</div>
+						<div class="form__order-col">
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">
+										Комментарий
+									</div>
+									<textarea class="form__input form__input_txt" name="comment" placeholder="">
+									</textarea>
+								</label>
+							</div>
+							<div class="form__buttons">
+								<div class="form__row">
+									<label class="form__radio">
+										<input class="form__radio-element" name="payment" type="radio">
+										<div class="form__radio-fake"></div>
+										<div class="form__radio-title">
+											Потребуется сдача
+										</div>
+									</label>
+									<label class="form__radio">
+										<input class="form__radio-element" name="payment" type="radio">
+										<div class="form__radio-fake"></div>
+										<div class="form__radio-title">
+											Оплата по карте
+										</div>
+									</label>
+									<div class="form__row">
+										<input class="form__radio-element" name="callback" type="checkbox">
+										<div class="form__radio-fake"></div>
+										<div class="form__radio-title">
+											Не перезванивать
+										</div>
+									</div>
+									<div class="form__row">
+										<input class="form__order-button" name="" type="submit" value="Заказать">
+                    					<input class="form__order-button form__order-button_reset" name="" type="reset" value="Очистить">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</section>
 		<section class="section map">
-			
+			<footer class="footer">
+				<div class="container">
+					<div class="block-footer d-flex center">
+						<div class="block-left">
+						<p class="block-left__adres">
+							Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+						</p>
+						<a href="tel:+78123771377" class="block-left__tel">
+							<i class="fa fa-phone"></i>
+							<span>
+								+7 (812) 377-13-77
+							</span>
+						</a>
+						</div>
+						<ul class="block-right d-flex">
+							<li class="block-right__item">
+								<a href="#" class="block-right__link">
+									<i class="fab fa-vk block-right__icon"></i>
+								</a>
+							</li>
+							<li class="block-right__item">
+								<a href="#" class="block-right__link">
+									<i class="fab fa-facebook block-right__icon"></i>
+								</a>
+							</li>
+							<li class="block-right__item">
+								<a href="#" class="block-right__link">
+									<i class="fab fa-instagram block-right__icon"></i>
+								</a>
+							</li>
+							<li class="block-right__item">
+								<a href="#" class="block-right__link">
+									<i class="fab fa-twitter block-right__icon"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
 		</section>
 
 		<ul class="fixed-menu">
