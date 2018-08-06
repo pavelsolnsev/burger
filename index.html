@@ -16,58 +16,63 @@
 <body>
 	 <div class="wrapper">
 		<section class="section hero">
-			<div class="container hero__container">
+			<div class="container">
 				<header class="header d-flex center space-between">
-					<div class="logo">
+					<a href="#" class="header__logo">
 						<img src="img/logo.png" alt="logo">
-					</div>
-					<nav class="menu">
-						<ul class="menu__list d-flex center space-between">
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+					</a>
+					<nav class="nav">
+						<ul class="nav__list d-flex center space-between">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									О нас
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Бургеры 
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Команда  
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Меню 
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Отзывы
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Как мы работаем 
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
 									Контакты
 								</a>
 							</li>
 						</ul>
 					</nav>
-					<button class="button btn">   
-						Заказать
-					</button>
+					<div class="header__links">
+						<button class="header__button btn">   
+							Заказать
+						</button>
+						<button class="header__humburger">
+							<div class="header__humburger-bars"></div>
+						</button>
+					</div>
 				</header>
 				<div class="hero__container">
 					<div class="hero__content d-flex">
 						<div class="hero__icon">
-							<img src="img/burger.png" alt="burger">
+							<img src="img/burger.png" alt="burger" class="hero__img">
 						</div>
 						<div class="hero__info">
 							<div class="section__title">
@@ -79,8 +84,8 @@
 			            </div>
 					</div>
 				</div>
-				<a href="#" class="arrow">
-					<img src="img/arrow-scroll.png" alt="arrow">
+				<a href="#" class="down-arrow">
+					<img src="img/arrow-scroll.png" alt="arrow" class="down-arrow__icon">
 				</a>
 			</div>
 		</section>
