@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 23 of D:\Web\[loftschool]\softN1\weekN1\css\section\team.scss
+        on line 23 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\team.scss
 
 18: .block-info__communications {
 19: 	font-size: 14px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$yellow".
 28: 	color: #fff;
 
 Backtrace:
-D:\Web\[loftschool]\softN1\weekN1\css\section\team.scss:23
+D:\Web\[loftschool]\softN1\weekN1\css\blocks\team.scss:23
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 23 of D:\Web\[loftschool]\softN1\weekN1\css\section\team.scss\A \A 18: .block-info__communications {\A 19: 	font-size: 14px;\A 20: }\A 21: \A 22: .block-info__title {\A 23: 	color: $yellow;\A 24: 	margin-bottom: 53px;\A 25: }\A 26: \A 27: .block-info__name {\A 28: 	color: #fff;"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 23 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\team.scss\A \A 18: .block-info__communications {\A 19: 	font-size: 14px;\A 20: }\A 21: \A 22: .block-info__title {\A 23: 	color: $yellow;\A 24: 	margin-bottom: 53px;\A 25: }\A 26: \A 27: .block-info__name {\A 28: 	color: #fff;"; }

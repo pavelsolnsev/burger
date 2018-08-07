@@ -362,106 +362,107 @@
 			</ul>
 		</section>
 		<section class="section order">
-			<div class="container">
-				<h1 class="order-title">
-					Закажите доставку
-				</h1>
-				<form action="#" class="form">
-					<div class="form__order d-flex">
-						<div class="form__order-col">
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">
-										Имя
-									</div>
-									<input class="form__input" name="name" type="text" placeholder="">
-								</label>
-								<label class="form__block">
-									<div class="form__title">
-										Телефон
-									</div>
-									<input class="form__input" name="phone" type="text" placeholder="">
-								</label>
-							</div>
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">
-										Улица
-									</div>
-									<input class="form__input" name="street" type="text" placeholder="">
-								</label>
-							</div>
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">
-										Дом
-									</div>
-									<input class="form__input" name="home" type="text" placeholder="">
-								</label>
-								<label class="form__block">
-									<div class="form__title">
-										Корпус
-									</div>
-									<input class="form__input" name="part" type="text" placeholder="">
-								</label>
-								<label class="form__block">
-									<div class="form__title">
-										Квартира
-									</div>
-									<input class="form__input" name="appt" type="text" placeholder="">
-								</label>
-								<label class="form__block">
-									<div class="form__title">
-										Этаж
-									</div>
-									<input class="form__input" name="floor" type="text" placeholder="">
-								</label>
-							</div>
-						</div>
-						<div class="form__order-col">
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">
-										Комментарий
-									</div>
-									<textarea class="form__input form__input_txt" name="comment" placeholder="">
-									</textarea>
-								</label>
-							</div>
-							<div class="form__buttons">
-								<div class="form__row">
-									<label class="form__radio">
-										<input class="form__radio-element" name="payment" type="radio">
-										<div class="form__radio-fake"></div>
-										<div class="form__radio-title">
-											Потребуется сдача
-										</div>
-									</label>
-									<label class="form__radio">
-										<input class="form__radio-element" name="payment" type="radio">
-										<div class="form__radio-fake"></div>
-										<div class="form__radio-title">
-											Оплата по карте
-										</div>
-									</label>
-									<div class="form__row">
-										<input class="form__radio-element" name="callback" type="checkbox">
-										<div class="form__radio-fake"></div>
-										<div class="form__radio-title">
-											Не перезванивать
-										</div>
-									</div>
-									<div class="form__row">
-										<input class="form__order-button" name="" type="submit" value="Заказать">
-                    					<input class="form__order-button form__order-button_reset" name="" type="reset" value="Очистить">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
+        	<div class="container">
+       			<h1 class="section__title">
+       				Закажите доставку
+       			</h1>
+         		<form class="order__form-tag" id="order-form">
+            		<div class="order__form">
+				        <div class="order__form-col">
+				            <div class="order__form-row">
+					            <label class="order__form-block">
+					                <div class="order__form-label">
+					                	Имя
+					            	</div>
+					                <input class="order__form-input" name="name" type="text" placeholder="">
+					            </label>
+					            <label class="order__form-block">
+					                <div class="order__form-label">
+					                	Телефон
+					            	</div>
+					                <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+					            </label>
+				            </div>
+				            <div class="order__form-row">
+				              	<label class="order__form-block">
+				                	<div class="order__form-label">
+				                		Улица
+				                	</div>
+				                	<input class="order__form-input" name="street" type="text" placeholder="">
+				             	</label>
+				            </div>
+				            <div class="order__form-row">
+					            <label class="order__form-block">
+					               	<div class="order__form-label">
+					               		Дом
+					               	</div>
+					                <input class="order__form-input" name="home" type="text" placeholder="">
+					            </label>
+					            <label class="order__form-block">
+					                <div class="order__form-label">
+					                	Корпус
+					            	</div>
+					                <input class="order__form-input" name="part" type="text" placeholder="">
+					            </label>
+					              <label class="order__form-block">
+					                <div class="order__form-label">
+					                	Квартира
+					            	</div>
+					                <input class="order__form-input" name="appt" type="text" placeholder="">
+					            </label>
+					            <label class="order__form-block">
+					                <div class="order__form-label">
+					                	Этаж
+					            	</div>
+					                <input class="order__form-input" name="floor" type="text" placeholder="">
+					            </label>
+				            </div>
+				        </div>
+             			<div class="order__form-col">
+                			<div class="order__form-row">
+					            <label class="order__form-block">
+					                <div class="order__form-label">
+					               	 	Комментарий
+					            	</div>
+					                <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+					            </label>
+                			</div>
+                			<div class="order__form-buttons">
+                 				<div class="order__form-row">
+					                <label class="order__radio">
+						                <input class="order__radio-elem" name="payment" type="radio">
+						                <div class="order__radio-fake"></div>
+						                <div class="order__radio-title">
+						                 	Потребуется сдача
+						             	</div>
+					                </label>
+					                <label class="order__radio">
+					                  	<input class="order__radio-elem" name="payment" type="radio">
+					                  	<div class="order__radio-fake"></div>
+					                  	<div class="order__radio-title">
+					                  		Оплата по карте
+					                  	</div>
+					                </label>
+                  				</div>
+                  				<div class="order__form-row">
+					                <label class="order__radio order__radio_checkbox">
+					                  	<input class="order__radio-elem" name="callback" type="checkbox">
+					                 	<div class="order__radio-fake"></div>
+					                  	<div class="order__radio-title">
+					                 		 Не перезванивать
+					              		</div>
+					                </label>
+                 				</div>
+                  				<div class="order__form-row">
+					                <input class="order__form-button" name="" type="submit" value="Заказать">
+					                <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
+                 				</div>
+                			</div>
+              			</div>
+            		</div>
+        		</form>
+        	</div>
+      </section>
 		<section class="section map">
 			<footer class="footer">
 				<div class="container">
