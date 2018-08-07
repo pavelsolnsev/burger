@@ -39,17 +39,21 @@ footer {
   &.section__title_white {
     color: #fff;
   }
+
+  &.section__title_center {
+    text-align: center;
+  }
 }
 
 .container {
   max-width: 940px;
-  padding: 0 10px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .wrapper {

@@ -1,0 +1,53 @@
+.header {
+  padding: 12px 0; }
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto; }
+
+.header__button {
+  width: 15%;
+  padding: rem(9px) 0;
+  margin-left: 2%;
+  min-width: rem(85px); }
+
+.header__humburger {
+  vertical-align: middle;
+  position: relative;
+  height: rem(22px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: rem(30px);
+  border: none;
+  background: transparent;
+  display: none; }
+
+.header__humburger-bars, .header__humburger-bars:before, .header__humburger-bars:after {
+  background: #fff;
+  width: rem(24px);
+  height: rem(4px);
+  border-radius: rem(3px); }
+.header__humburger-bars:before, .header__humburger-bars:after {
+  content: "";
+  display: block;
+  position: absolute; }
+.header__humburger-bars:before {
+  top: 0; }
+.header__humburger-bars:after {
+  bottom: 0; }
+
+/*# sourceMappingURL=header.css.map */
