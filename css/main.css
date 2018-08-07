@@ -701,75 +701,68 @@ button, button:hover, button:focus, button:active {
 .best__text p {
   font-size: 0.875rem; }
 
-.profile__list {
+.reviews__list {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  height: 100%; }
+  background: #000;
+  width: 100%; }
 
-.profile__item {
-  position: relative;
+.reviews__item {
   width: 25%;
-  height: 50%; }
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+  .reviews__item:hover .reviews__hover {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
-.profile__overlay {
-  opacity: 0;
+.reviews__hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(20, 20, 20, 0.7);
   position: absolute;
-  background-color: rgba(20, 20, 20, 0.7);
-  left: 0;
-  right: 0;
   top: 0;
   bottom: 0;
-  padding: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  .profile__overlay:hover {
-    opacity: 1; }
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  padding: 4.125rem 3.8125rem 0px 1.5rem; }
 
-.profile__icon {
-  width: 100%;
-  height: 100%; }
+.reviews__title {
+  font-family: 'Gagalin-Regular'; }
 
-.profile__title {
-  font-size: 14px;
-  font-family: 'Gagalin-Regular';
-  color: #fff; }
+.reviews__text p {
+  font-weight: 300;
+  margin: 27px 0 31px;
+  line-height: 1.6em; }
 
-.profile__text {
-  font-size: 14px;
-  width: 300;
-  color: #fff;
-  margin: 28px 0 20px;
-  line-height: 1.71; }
-
-.profile__link {
-  font-weight: 500;
-  font-size: 13px;
-  text-transform: uppercase;
+.reviews__batton {
   display: block;
-  width: 110px;
-  padding: 10px 0;
+  width: 34%;
   background: #2f3234;
+  min-width: 110px;
   color: #fff;
   text-align: center;
-  -webkit-transition: .5s;
-  transition: .5s; }
-  .profile__link:hover {
+  padding: 9px 0;
+  text-transform: uppercase;
+  border-radius: 0.375rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  font-size: 0.8125rem; }
+  .reviews__batton:hover {
     background: #1f2122; }
 
 .team {
