@@ -26,7 +26,6 @@
 .reviews__hover {
   transition: all 0.5s ease;
   color: #fff;
-  font-size: 14px;
   background: rgba(#141414, .7);
   position: absolute;
   top: 0;
@@ -48,6 +47,7 @@
   font-weight: 300;
   margin: 27px 0 31px;
   line-height: 1.6em;
+  font-size: rem(14px);
 } 
 
 .reviews__batton {

@@ -31,14 +31,13 @@
 }
 
 .hero__desc {
-  	font-size: 65px;
+  	font-size: rem(65px);
   	color: #fff;
   	font-family: 'Lifehack Medium';
   	line-height: 1em;
     display: block;
-    margin-top: 10px;
     letter-spacing: -0.025em;
-	}
+}
 
 .down-arrow {
     position: absolute;

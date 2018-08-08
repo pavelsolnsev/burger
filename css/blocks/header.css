@@ -19,10 +19,7 @@
   margin-left: auto; }
 
 .header__button {
-  width: 15%;
-  padding: rem(9px) 0;
-  margin-left: 2%;
-  min-width: rem(85px); }
+  margin-left: 2%; }
 
 .header__humburger {
   vertical-align: middle;

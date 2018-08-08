@@ -17,7 +17,7 @@
 
 .order__form-row {
 	display: flex;
-	margin-bottom: 16px;
+	margin-bottom: rem(16px);
 }
 
 .order__form-block {
@@ -38,8 +38,6 @@
 }
 
 .order__form-label {
-	font-size: rem(14px);
-	color: #fff;
 	margin-bottom: rem(7px);
 }
 
@@ -56,8 +54,22 @@
 }
 
 .order__radio-title {
-  font-size: rem(14px);
-  color: #fff;
   margin-left: rem(7px);
+}
+
+.order__form-button {
+	
+}
+
+.order__form-button_reset {
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  background: transparent;
+  color: #fff;
+  border: none;
+  margin-left: rem(20px);
+  cursor: pointer;
+
 }
 
