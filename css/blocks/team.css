@@ -1,0 +1,27 @@
+.team {
+  background: #747474 url(../img/team.jpg) center center/cover no-repeat;
+  position: relative; }
+  .team .section__title {
+    margin-bottom: rem(30px); }
+
+.team__content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding-left: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*# sourceMappingURL=team.css.map */

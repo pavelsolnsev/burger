@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$black".
-        on line 12 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss
+Error: Undefined variable: "$orange".
+        on line 27 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\map.scss
 
-7:   font-family: 'Ubuntu', sans-serif;
-8:   line-height: 1.42;
-9:   -webkit-font-smoothing: antialiased;
-10:   -moz-osx-font-smoothing: grayscale;
-11:   font-size: rem(16px);
-12:   color: $black;
-13:   position: relative;
-14: }
-15: 
-16: section {
-17:   height: 100vh;
+22: 	font-weight: 300;
+23: 	margin-bottom: 6px;
+24: }
+25: 
+26: .block-left__tel {
+27: 	color: $orange;
+28: 	font-weight: 900;
+29: }
+30: 
+31: .block-left__tel i {
+32: 	margin-right: 4px;
 
 Backtrace:
-D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss:12
+D:\Web\[loftschool]\softN1\weekN1\css\blocks\map.scss:27
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 12 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss\A \A 7:   font-family: 'Ubuntu', sans-serif;\A 8:   line-height: 1.42;\A 9:   -webkit-font-smoothing: antialiased;\A 10:   -moz-osx-font-smoothing: grayscale;\A 11:   font-size: rem(16px);\A 12:   color: $black;\A 13:   position: relative;\A 14: }\A 15: \A 16: section {\A 17:   height: 100vh;"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 27 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\map.scss\A \A 22: 	font-weight: 300;\A 23: 	margin-bottom: 6px;\A 24: }\A 25: \A 26: .block-left__tel {\A 27: 	color: $orange;\A 28: 	font-weight: 900;\A 29: }\A 30: \A 31: .block-left__tel i {\A 32: 	margin-right: 4px;"; }

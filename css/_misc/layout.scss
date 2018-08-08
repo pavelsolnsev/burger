@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
 }
@@ -7,17 +8,45 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: rem(16px);
+  color: $black;
+  position: relative;
 }
 
-header, section {
+section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+}
+
+.section__title {
+  color: $yellow;
+  font-size: rem(72px);
+  margin-bottom: rem(15px);
+  font-family: 'Gagalin-Regular';
+
+  &.section__title_black {
+    color: $black;
+  }
+
+  &.section__title_white {
+    color: #fff;
+  }
+
+  &.section__title_center {
+    text-align: center;
+  }
+}
 
 .container {
-  max-width: 940px;
-  padding: 0 10px;
+  max-width: rem(940px);
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -30,7 +59,6 @@ header, section {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -48,17 +76,19 @@ header, section {
 }
 
 .btn {
-  width: 98px;
-  padding: 12px 0;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: rem(13px);
   background: #e45028;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: rem(5px);
   font-weight: 500;
   transition: all 0.5s ease;
   cursor: pointer;
+  width: 15%;
+  padding: rem(9px) 0;
+  min-width: rem(85px);
+  text-align: center;
   &:hover {
     background: #c1401e;
   }
@@ -69,15 +99,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
-h1 {
-  font-size: 72px;
-  font-family: 'Gagalin-Regular';
+h4 {
+  font-size: rem(14px);
+  color: #fff;
 }
+
 
 ul, li {
   display: block;
   padding: 0;
   margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 p {
@@ -89,7 +125,7 @@ a, a:hover, a:active {
   text-decoration: none;
 }
 
-div, p, form, input, a, span, button {
+* {
   box-sizing: border-box;
 }
 

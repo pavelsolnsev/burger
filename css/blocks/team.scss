@@ -1,0 +1,21 @@
+.team {
+	background: #747474 url(../img/team.jpg) center center / cover no-repeat;
+	position: relative;
+	.section__title {
+		margin-bottom: rem(30px);
+	}
+}
+
+.team__content {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: rgba(#2f3234, .93);
+  	padding-left: 10%;
+  	flex-direction: column;
+  	display: flex;
+  	justify-content: center;
+}
