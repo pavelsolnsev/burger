@@ -772,84 +772,94 @@ button, button:hover, button:focus, button:active {
 .team {
   background: #747474 url(../img/team.jpg) center center/cover no-repeat;
   position: relative; }
+  .team .section__title {
+    margin-bottom: 1.875rem; }
 
-.block {
-  width: 50%;
+.team__content {
   position: absolute;
-  top: 0;
-  bottom: 0;
   right: 0;
-  background: rgba(51, 51, 51, 0.92);
-  padding: 113px 0 146px 98px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding-left: 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-
-.block-info__communications {
-  font-size: 14px; }
-
-.block-info__title {
-  color: #f9b43b;
-  margin-bottom: 53px; }
-
-.block-info__name {
-  color: #fff;
-  font-family: 'Gagalin-Regular';
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.team-acco__trigger {
+  font-size: 0.875rem;
+  color: #fff;
+  font-family: 'Gagalin-Regular';
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .team-acco__trigger:before {
+    content: "";
+    border-top: 0.4375rem solid #f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-right: 0.625rem;
+    margin-top: 0.1875rem; }
 
-.block-info__name {
-  margin-bottom: 37px; }
-  .block-info__name:before {
-    content: '';
-    border: 5px solid transparent;
-    border-bottom: 5px solid #f9b43b;
-    display: inline-block;
-    margin-right: 10px; }
+.team-acco__item {
+  margin-bottom: 1.25rem; }
+  .team-acco__item:last-child {
+    margin-bottom: 0; }
+  .team-acco__item.active .team-acco__trigger {
+    color: #f9b43b; }
+    .team-acco__item.active .team-acco__trigger:before {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
 
-.block-info__photo {
+.team-acco__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -15px;
-  margin-bottom: 42px;
   height: 0;
   overflow: hidden; }
 
-.block-info__info {
-  width: 220px; }
+.team-acco__text {
+  margin-left: 1.25rem; }
 
-.block-info__operator {
+.team-acco__img {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%; }
+
+.team-acco__text {
+  width: 15rem; }
+
+.team-acco__title {
+  font-weight: 900;
+  font-size: 0.875rem;
+  margin-bottom: 0.875rem; }
+
+.team-acco__text-content p {
+  font-weight: 300;
   color: #fff;
-  font-weight: 900; }
-
-.block-info__text {
-  color: #fff;
-  font-weight: 500; }
-
-.block-info__operator {
-  margin-bottom: 26px; }
-
-.block-info__icon {
-  margin-right: 21px; }
-
-.block-info__icon img {
-  width: 100%;
-  display: block; }
-
-.block-info__communications_active .block-info__name {
-  color: #f9b43b; }
-  .block-info__communications_active .block-info__name:before {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
+  font-size: 0.875rem; }
 
 .menu {
   background: #2c3e44 url(../img/menu.jpg) center center/cover no-repeat;

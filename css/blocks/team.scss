@@ -1,93 +1,21 @@
 .team {
 	background: #747474 url(../img/team.jpg) center center / cover no-repeat;
 	position: relative;
-}
-
-.block {
-	width: 50%;
-	position: absolute;
-	top: 0;
-  	bottom: 0;
- 	right: 0;
-	background: rgba(51, 51, 51, 0.92);
-	padding: 113px 0 146px 98px;
-	display: flex;
- 	flex-direction: column;
-}
-
-.block-info__communications {
-	font-size: 14px;
-}
-
-.block-info__title {
-	color: $yellow;
-	margin-bottom: 53px;
-}
-
-.block-info__name {
-	color: #fff;
-	font-family: 'Gagalin-Regular';
-	display: flex;
-	align-items: center;
-}
-
-.block-info__name {
-	margin-bottom: 37px;
-
-	&:before {
-		content: '';
-		border: 5px solid transparent;
-		border-bottom: 5px solid $yellow;
-		display: inline-block;
-    	margin-right: 10px;
+	.section__title {
+		margin-bottom: rem(30px);
 	}
 }
 
-.block-info__photo {
-	display: flex;
-	margin-top: -15px;
-    margin-bottom: 42px;
-    height: 0;
-    overflow: hidden;
-}
-
-.block-info__info {
-	width: 220px;
-}
-
-.block-info__operator {
-	color: #fff;
-	font-weight: 900;
-}
-
-.block-info__text {
-	color: #fff;
-	font-weight: 500;
-}
-
-.block-info__operator {
-	margin-bottom: 26px;
-}
-
-.block-info__icon {
-	margin-right: 21px;
-}
-
-.block-info__icon img {
-	width: 100%;
-	display: block;
-}
-
-.block-info__communications_active {
-  .block-info__name {
-    color: $yellow;
-
-    &:before {
-       transform: rotate(-180deg);
-    }
-  }
-
-  .block-info__photo {
-   
-  }
+.team__content {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: rgba(#2f3234, .93);
+  	padding-left: 10%;
+  	flex-direction: column;
+  	display: flex;
+  	justify-content: center;
 }
