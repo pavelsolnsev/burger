@@ -995,6 +995,13 @@ button, button:hover, button:focus, button:active {
   margin-left: 1.25rem;
   cursor: pointer; }
 
+.yandex-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 .map {
   background: #aacbd9 url(../img/map.jpg) center center/cover no-repeat; }
 
@@ -1005,35 +1012,35 @@ button, button:hover, button:focus, button:active {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px 0; }
+  padding: 0.625rem 0; }
 
-.block-left {
+.footer__col {
   width: 50%;
   font-size: 14px; }
 
-.block-left__adres {
+.footer__adres {
   color: #fff;
   font-weight: 300;
   margin-bottom: 6px; }
 
-.block-left__tel {
+.footer__tel {
   color: #e45028;
   font-weight: 900; }
 
-.block-left__tel i {
+.footer__tel i {
   margin-right: 4px; }
 
-.block-right {
+.socials {
   margin-left: auto; }
 
-.block-right__item {
+.socials__item {
   margin-left: 14px; }
 
-.block-right__link {
+.socials__link {
   color: #5a5a5a;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  .block-right__link:hover {
+  .socials__link:hover {
     color: #fff; }
 
 .fixed-menu {
