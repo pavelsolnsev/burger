@@ -1,14 +1,22 @@
 .reviews__list {
+<<<<<<< HEAD
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   background: #000;
   width: 100%;
+=======
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .reviews__item {
   width: 25%;
   height: 50%;
+<<<<<<< HEAD
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -19,10 +27,41 @@
       visibility: visible;
       opacity: 1;
       transition: all 0.5s ease;
+=======
+  position: relative;
+  @include tablets {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.review {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: .3s;
+  }
+  &:hover {
+    .review__hover {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    &:after {
+      background: rgba(#141414, .7);
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
     }
   }
 }
 
+<<<<<<< HEAD
 .reviews__hover {
   transition: all 0.5s ease;
   color: #fff;
@@ -68,3 +107,78 @@
     background: #1f2122;
   }
 }
+=======
+.review__photo {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  @include cover;
+
+}
+
+.review__hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(.7);
+  opacity: 0;
+  padding: 17% 12% 0;
+  transition: .3s;
+  z-index: 10;
+  @include tablets {
+    text-align: center;
+    padding: 3% 9%;
+  }
+
+  @include phones {
+    top: 70%;
+  }
+}
+
+.review__title {
+  color: #fff;
+  font-family: 'Gagalin-Regular';
+  font-size: rem(14px);
+  margin-bottom: rem(25px);
+  @include phones {
+    font-size: rem(24px);
+  }
+}
+
+.review__shorttext {
+  color: #ffffff;
+  font-size: rem(14px);
+  font-weight: 300;
+  margin-bottom: rem(13px);
+  @include phones {
+    display: none;
+  }
+}
+
+.review__view {
+  border-radius: rem(5px);
+  background-color: rgb(47, 50, 52);
+  padding: rem(8px) rem(12px);
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include phones {
+    display: none;
+  }
+  font-size: rem(12px);
+  transition: .3s;
+  &:hover {
+    background-color: rgb(31, 33, 34);
+  }
+}
+
+.review__view_read {
+  display: none;
+  @include phones {
+    display: inline-block;
+  }
+}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0

@@ -1,0 +1,14 @@
+.socials {
+  margin-left: auto; }
+
+.socials__item {
+  margin-left: 14px; }
+
+.socials__link {
+  color: #5a5a5a;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .socials__link:hover {
+    color: #fff; }
+
+/*# sourceMappingURL=socials.css.map */

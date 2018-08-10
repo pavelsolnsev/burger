@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .nav {
 	margin-left: 50px;
@@ -29,3 +30,39 @@
     }
   }
 }
+=======
+.nav__list {
+	width: 100%;
+  	display: flex;
+  	align-items: center;
+}
+
+.nav__item {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	
+	&:first-child {
+		&:before {
+			display: none;
+		}
+	}
+
+	&:before {
+		content: '';
+		width: rem(4px);
+		height: rem(4px);
+		background: #fff;
+		border-radius: 50%;
+		display: block;
+		margin: 0 rem(10px)
+	}
+}
+
+.nav__link {
+	font-size: rem(13px);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0

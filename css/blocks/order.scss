@@ -8,11 +8,23 @@
 .order__form {
 	display: flex;
 	margin-left: -5%;
+<<<<<<< HEAD
+=======
+	@include tablets {
+  		flex-direction: column;
+  	}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .order__form-col {
  	width: 45%;
   	margin-left: 5%;
+<<<<<<< HEAD
+=======
+  	@include tablets {
+  		width: auto;
+  	}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .order__form-row {
@@ -29,6 +41,15 @@
 	}
 }
 
+<<<<<<< HEAD
+=======
+.order__form-block_none {
+	@include phones {
+		display: none;
+	}
+}
+
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 .order__form-input {
 	width: 100%;
 	padding: rem(8px) rem(20px);
@@ -39,6 +60,14 @@
 
 .order__form-label {
 	margin-bottom: rem(7px);
+<<<<<<< HEAD
+=======
+	&:nth-child(7) {
+		@include phones {
+			display: none;
+		}
+	}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .order__form-input_textarea {
@@ -70,6 +99,12 @@
   border: none;
   margin-left: rem(20px);
   cursor: pointer;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+
+
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0

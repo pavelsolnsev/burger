@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+html {
+  @include tablets {
+    font-size: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(13px);
+  }
+}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 
 html, body {
   height: 100%;
@@ -47,7 +59,11 @@ footer {
 
 .container {
   max-width: rem(940px);
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 95%;
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
   margin: 0 auto;
   height: 100%;
   position: relative;

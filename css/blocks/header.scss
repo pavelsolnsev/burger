@@ -1,4 +1,5 @@
 .header {
+<<<<<<< HEAD
 	padding: 12px 0;
 }
 
@@ -7,14 +8,34 @@
   align-items: center;
 } 
 
+=======
+	padding-top: rem(12px);
+}
+
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 .header__btns {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
+<<<<<<< HEAD
 .header__button {
 	margin-left: 2%;
+=======
+.header__links {
+  display: flex;
+  align-items: center;
+} 
+
+.header__menu {
+	flex: 1;
+	text-align: right;
+	margin-right: rem(20px);
+	@include tablets {
+		display: none;
+	}
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .header__humburger {
@@ -26,9 +47,18 @@
 	border: none;
 	background: transparent;
 	display: none;
+<<<<<<< HEAD
 }
 
 .header__humburger-bars{
+=======
+	@include tablets {
+		display: flex;
+	}
+}
+
+.header__humburger-bars {
+>>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 	&, &:before, &:after {
 		background: #fff;
 		width: rem(24px);

@@ -1,0 +1,19 @@
+.socials {
+	margin-left: auto;
+	@include phones {
+		margin-left: 0;
+		margin-top: rem(7px);
+	}
+}
+
+.socials__item {
+	margin-left: 14px;
+}
+
+.socials__link {
+	color: #5a5a5a;
+	transition: all 0.5s ease;
+	&:hover {
+		color: #fff;
+	}
+}
