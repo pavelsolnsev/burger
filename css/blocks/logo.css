@@ -1,0 +1,8 @@
+.logo {
+  display: block;
+  position: relative;
+  z-index: 110; }
+  .logo img {
+    max-width: 95%; }
+
+/*# sourceMappingURL=logo.css.map */

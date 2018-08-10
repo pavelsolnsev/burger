@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 14 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss, in `tablets'
-        from line 14 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss
+Error: Undefined variable: "$orange".
+        on line 27 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\footer.scss
 
-9: 
-10: .header__btns {
-11:   display: flex;
-12:   align-items: center;
-13:   margin-left: auto;
-14:   @include tablets () {
-15: 		display: none;
-16: 	}
-17: }
-18: 
-19: .header__button {
+22: 	font-weight: 300;
+23: 	margin-bottom: 6px;
+24: }
+25: 
+26: .footer__tel {
+27: 	color: $orange;
+28: 	font-weight: 900;
+29: }
+30: 
+31: .footer__tel i {
+32: 	margin-right: 4px;
 
 Backtrace:
-D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss:14:in `tablets'
-D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss:14
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+D:\Web\[loftschool]\softN1\weekN1\css\blocks\footer.scss:27
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 14 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss, in `tablets'\A         from line 14 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\header.scss\A \A 9: \A 10: .header__btns {\A 11:   display: flex;\A 12:   align-items: center;\A 13:   margin-left: auto;\A 14:   @include tablets () {\A 15: 		display: none;\A 16: 	}\A 17: }\A 18: \A 19: .header__button {"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 27 of D:\Web\[loftschool]\softN1\weekN1\css\blocks\footer.scss\A \A 22: 	font-weight: 300;\A 23: 	margin-bottom: 6px;\A 24: }\A 25: \A 26: .footer__tel {\A 27: 	color: $orange;\A 28: 	font-weight: 900;\A 29: }\A 30: \A 31: .footer__tel i {\A 32: 	margin-right: 4px;"; }

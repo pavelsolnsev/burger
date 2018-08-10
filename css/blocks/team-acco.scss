@@ -39,12 +39,14 @@
 
 .team-acco__content {
 	display: flex;
-	height: 0;
-	overflow: hidden;
+	@include tablets {
+		flex-direction: column;
+	}
+
 }
 
-.team-acco__text {
-	margin-left: rem(20px);
+.team-acco__pic {
+	margin: 0 auto;
 }
 
 .team-acco__img {
@@ -58,6 +60,13 @@
 
 .team-acco__text {
 	width: rem(240px);
+	margin-left: rem(20px);
+	@include tablets {
+		width: auto;
+		margin-left: 0;
+		margin-top: rem(12px);
+		padding: 0 2%;
+	}
 }
 
 .team-acco__title {

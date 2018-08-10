@@ -10,11 +10,22 @@
 
 .hero__content {
     flex: .8;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20%;
+      justify-content: center;
+    }
 }
 
 .hero__icon, .hero__info {
     float: left;
     width: 50%;
+    @include tablets {
+      width: auto;
+      float: none;
+    }
 }
 
 .hero__img {
