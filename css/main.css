@@ -1216,7 +1216,6 @@ button, button:hover, button:focus, button:active {
     text-align: center; } }
 
 .footer__col {
-  width: 50%;
   font-size: 14px; }
   @media screen and (max-width: 480px) {
     .footer__col {
