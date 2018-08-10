@@ -12,9 +12,19 @@
   	padding: rem(10px) 0;
 }
 
+.footer__block {
+	@include phones {
+		flex-direction: column;
+    	text-align: center;
+	}
+}
+
 .footer__col {
 	width: 50%;
 	font-size: 14px;
+	@include phones {
+		width: auto;
+	}
 }
 
 .footer__adres {

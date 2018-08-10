@@ -22,6 +22,9 @@
 	position: relative;
 	@include cover;
 	float: left;
+	@include phones {
+		width: rem(45px);
+	}
 }
 
 .menu-acco__trigger-text {
