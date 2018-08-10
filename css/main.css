@@ -988,7 +988,9 @@ button, button:hover, button:focus, button:active {
 .team-acco__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: 0;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .team-acco__content {
       -webkit-box-orient: vertical;
@@ -996,8 +998,9 @@ button, button:hover, button:focus, button:active {
       -ms-flex-direction: column;
       flex-direction: column; } }
 
-.team-acco__pic {
-  margin: 0 auto; }
+@media screen and (max-width: 480px) {
+  .team-acco__pic {
+    margin: 0 auto; } }
 
 .team-acco__img {
   width: 6.25rem;

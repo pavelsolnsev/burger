@@ -1,0 +1,43 @@
+.map {
+	background: #aacbd9 url(../img/map.jpg) center center / cover no-repeat;
+}
+
+.footer {
+	background: #1b1b1b url(../img/foot.jpg) center center / cover no-repeat;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	padding: rem(10px) 0;
+}
+
+.footer__block {
+	@include phones {
+		flex-direction: column;
+    	text-align: center;
+	}
+}
+
+.footer__col {
+	width: 50%;
+	font-size: 14px;
+	@include phones {
+		width: auto;
+	}
+}
+
+.footer__adres {
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 6px;
+}
+
+.footer__tel {
+	color: $orange;
+	font-weight: 900;
+}
+
+.footer__tel i {
+	margin-right: 4px;
+}
