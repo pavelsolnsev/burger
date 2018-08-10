@@ -3,8 +3,12 @@
 	position: relative;
 	.section__title {
 		margin-bottom: 0;
+		@include phones {
+			font-size: rem(50px);
+		}
 	}
 }
+
 
 .menu__title {
 	position: absolute;

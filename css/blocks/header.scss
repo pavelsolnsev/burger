@@ -1,11 +1,6 @@
 .header {
-	padding: 12px 0;
+	padding-top: rem(12px);
 }
-
-.header__links {
-  display: flex;
-  align-items: center;
-} 
 
 .header__btns {
   display: flex;
@@ -13,9 +8,6 @@
   margin-left: auto;
 }
 
-.header__button {
-	margin-left: 2%;
-}
 .header__links {
   display: flex;
   align-items: center;
@@ -39,9 +31,6 @@
 	border: none;
 	background: transparent;
 	display: none;
-}
-
-.header__humburger-bars{
 	@include tablets {
 		display: flex;
 	}

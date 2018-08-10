@@ -21,13 +21,10 @@
 	background-image: -o-linear-gradient(top, $top-color, $bottom-color); /* Opera 11.10-12.00 */
 	background-image: linear-gradient(to bottom, $top-color, $bottom-color); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
-<<<<<<< HEAD
-=======
 }
 
 @mixin cover {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }

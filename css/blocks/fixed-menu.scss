@@ -2,12 +2,9 @@
 	position: fixed;
     top: rem(101px);
     right: rem(44px);
-<<<<<<< HEAD
-=======
     @include tablets {
     	display: none;
     }
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .fixed-menu__link {

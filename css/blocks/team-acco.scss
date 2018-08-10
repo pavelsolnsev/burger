@@ -39,14 +39,6 @@
 
 .team-acco__content {
 	display: flex;
-<<<<<<< HEAD
-	height: 0;
-	overflow: hidden;
-}
-
-.team-acco__text {
-	margin-left: rem(20px);
-=======
 	@include tablets {
 		flex-direction: column;
 	}
@@ -55,7 +47,6 @@
 
 .team-acco__pic {
 	margin: 0 auto;
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .team-acco__img {
@@ -69,8 +60,6 @@
 
 .team-acco__text {
 	width: rem(240px);
-<<<<<<< HEAD
-=======
 	margin-left: rem(20px);
 	@include tablets {
 		width: auto;
@@ -78,7 +67,6 @@
 		margin-top: rem(12px);
 		padding: 0 2%;
 	}
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .team-acco__title {

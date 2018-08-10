@@ -4,11 +4,6 @@ $yellow: #f9b43b;
 $black: #2f3234;
 
 // resolutions
-<<<<<<< HEAD
-$desktop: 1200px;
-$laptop: 992px;
-=======
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 $tablets: 768px;
 $phones: 480px;
 
@@ -16,30 +11,6 @@ $phones: 480px;
 @import "_misc/normalize.scss";
 
 // media
-<<<<<<< HEAD
-@import "_misc/media";
-
-// setups
-@import "_misc/mixins";
-@import "_misc/fonts";
-@import "_misc/layout";
-
-// section
-@import "blocks/hero.scss";
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/best.scss";
-@import "blocks/reviews.scss";
-@import "blocks/team.scss";
-@import "blocks/team-acco.scss";
-@import "blocks/menu.scss";
-@import "blocks/menu-acco.scss";
-@import "blocks/order.scss";
-@import "blocks/map.scss";
-@import "blocks/fixed-menu.scss";
-
-
-=======
 @import "_misc/media.scss";
 
 // setups
@@ -65,7 +36,6 @@ $phones: 480px;
 @import "blocks/fixed-menu.scss";
 
 
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 
 
 

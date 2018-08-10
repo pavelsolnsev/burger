@@ -1,26 +1,4 @@
 /*
-<<<<<<< HEAD
-Error: Undefined variable: "$black".
-        on line 12 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss
-
-7:   font-family: 'Ubuntu', sans-serif;
-8:   line-height: 1.42;
-9:   -webkit-font-smoothing: antialiased;
-10:   -moz-osx-font-smoothing: grayscale;
-11:   font-size: rem(16px);
-12:   color: $black;
-13:   position: relative;
-14: }
-15: 
-16: section {
-17:   height: 100vh;
-
-Backtrace:
-D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss:12
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-=======
 Error: Undefined mixin 'tablets'.
         on line 2 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss, in `tablets'
         from line 2 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss
@@ -41,7 +19,6 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `b
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -85,8 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-<<<<<<< HEAD
-  content: "Error: Undefined variable: \"$black\".\A         on line 12 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss\A \A 7:   font-family: 'Ubuntu', sans-serif;\A 8:   line-height: 1.42;\A 9:   -webkit-font-smoothing: antialiased;\A 10:   -moz-osx-font-smoothing: grayscale;\A 11:   font-size: rem(16px);\A 12:   color: $black;\A 13:   position: relative;\A 14: }\A 15: \A 16: section {\A 17:   height: 100vh;"; }
-=======
   content: "Error: Undefined mixin 'tablets'.\A         on line 2 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss, in `tablets'\A         from line 2 of D:\Web\[loftschool]\softN1\weekN1\css\_misc\layout.scss\A \A 1: html {\A 2:   @include tablets {\A 3:     font-size: rem(15px);\A 4:   }\A 5: \A 6:   @include phones {\A 7:     font-size: rem(13px);"; }
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0

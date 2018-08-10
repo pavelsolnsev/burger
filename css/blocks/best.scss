@@ -1,9 +1,5 @@
 .best {
 	background: #000 url(../img/bg.jpg) center center / cover no-repeat;
-<<<<<<< HEAD
-  	 .section__title {
-    margin-bottom: rem(40px);
-=======
   	 text-align: center;
   	display: flex;
   	align-items: center;
@@ -12,31 +8,20 @@
     @include phones {
     	font-size: rem(50px)
     }
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
   }
 }
 
 .best__list {
 	display: flex;
-<<<<<<< HEAD
-	align-items: flex-start;
-=======
 	@include phones {
 		flex-direction: column;
 	}
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .best__item {
  	flex: 1;
  	display: flex;
  	flex-direction: column;
-<<<<<<< HEAD
- 	align-items: center;
- 	text-align: center;
- 	padding: 0 rem(10px);
- 	margin-bottom: rem(50px);
-=======
  	padding: 0 rem(10px);
  	margin-bottom: rem(50px);
  	@include phones {
@@ -48,7 +33,6 @@
 	@include phones {
 		text-align: left;
 	}
->>>>>>> 11a2a1ac621e2e1f5faab26512683905cb8954a0
 }
 
 .best__desc h2 {
