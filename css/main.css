@@ -401,11 +401,10 @@ template {
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'Lifehack Medium';
-  src: url("../fonts/Lifehack Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Lifehack Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lifehack Medium.woff2") format("woff2"), url("../fonts/Lifehack Medium.woff") format("woff"), url("../fonts/Lifehack Medium.ttf") format("truetype"), url("../fonts/Lifehack Medium.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: 'Lifehack-Medium';
+  src: url("../fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 @media screen and (max-width: 768px) {
   html {
@@ -502,9 +501,8 @@ footer {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-  width: 15%;
   padding: 0.5625rem 0;
-  min-width: 5.3125rem;
+  width: 6.0625rem;
   text-align: center; }
   .btn:hover {
     background: #c1401e; }
@@ -595,9 +593,14 @@ button, button:hover, button:focus, button:active {
 
 .hero__info {
   padding-top: 3.75rem; }
+  .hero__info .section__title {
+    font-size: 4.0625rem; }
+
+.hero__icon {
+  margin-right: 0.625rem; }
 
 .hero__desc {
-  font-size: 4.0625rem;
+  font-size: 3.75rem;
   color: #fff;
   font-family: 'Lifehack Medium';
   line-height: 1em;
@@ -635,8 +638,7 @@ button, button:hover, button:focus, button:active {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-left: auto; }
+  align-items: center; }
 
 .header__links {
   display: -webkit-box;
@@ -690,19 +692,6 @@ button, button:hover, button:focus, button:active {
 .header__humburger-bars:after {
   bottom: 0; }
 
-.logo {
-  display: inline-block;
-  position: relative;
-  z-index: 110; }
-  .logo img {
-    max-width: 95%; }
-
-.logo__img {
-  height: 4.6875rem; }
-
-.logo__icon path:nth-child(1) {
-  fill: #e45028; }
-
 .nav__list {
   width: 100%;
   display: -webkit-box;
@@ -732,7 +721,7 @@ button, button:hover, button:focus, button:active {
     margin: 0 0.625rem; }
 
 .nav__link {
-  font-size: 0.8125rem;
+  font-size: 0.625rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500; }
@@ -784,8 +773,14 @@ button, button:hover, button:focus, button:active {
       flex-direction: row; } }
 
 @media screen and (max-width: 480px) {
+  .best__icon {
+    width: 30%;
+    margin-right: 1.25rem; } }
+
+@media screen and (max-width: 480px) {
   .best__desc {
-    text-align: left; } }
+    text-align: left;
+    width: 65%; } }
 
 .best__desc h2 {
   font-size: 1.5rem;
@@ -826,9 +821,9 @@ button, button:hover, button:focus, button:active {
     right: 0;
     bottom: 0;
     background: transparent;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
   .review:hover .review__hover {
     -webkit-transform: translate(-50%, -50%) scale(1);
     -ms-transform: translate(-50%, -50%) scale(1);
@@ -857,17 +852,17 @@ button, button:hover, button:focus, button:active {
   transform: translate(-50%, -50%) scale(0.7);
   opacity: 0;
   padding: 17% 12% 0;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   z-index: 10; }
   @media screen and (max-width: 768px) {
     .review__hover {
       text-align: center;
-      padding: 3% 9%; } }
+      padding: 10%; } }
   @media screen and (max-width: 480px) {
     .review__hover {
-      top: 70%; } }
+      top: 60%; } }
 
 .review__title {
   color: #fff;
@@ -1056,7 +1051,7 @@ button, button:hover, button:focus, button:active {
 .menu-acco__item {
   height: 100%; }
   .menu-acco__item.active .menu-acco__trigger-text {
-    color: red; }
+    color: #f9b43b; }
 
 .menu-acco__trigger {
   width: 5rem;
@@ -1094,8 +1089,7 @@ button, button:hover, button:focus, button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 0;
-  overflow: hidden; }
+  float: left; }
 
 .menu-acco__text {
   font-size: 0.875rem;
@@ -1110,6 +1104,11 @@ button, button:hover, button:focus, button:active {
   background: #1b1b1b url(../img/form.jpg) center center/cover no-repeat; }
   .order .section__title {
     text-align: center; }
+    @media screen and (max-width: 480px) {
+      .order .section__title {
+        line-height: 1.2em;
+        font-size: 3.125rem;
+        padding-top: 1.25rem; } }
 
 .order__form {
   display: -webkit-box;
@@ -1135,6 +1134,12 @@ button, button:hover, button:focus, button:active {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem; }
+  @media screen and (max-width: 480px) {
+    .order__form-row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 2.5rem; } }
 
 .order__form-block {
   -webkit-box-flex: 1;
@@ -1247,7 +1252,8 @@ button, button:hover, button:focus, button:active {
   color: #5a5a5a;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  font-size: 1.5625rem; }
   .socials__link:hover {
     color: #fff; }
 

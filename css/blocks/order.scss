@@ -2,6 +2,11 @@
 	background: #1b1b1b url(../img/form.jpg) center center / cover no-repeat;
 	.section__title {
     text-align: center;
+    @include phones {
+    	line-height: 1.2em;
+    	font-size: rem(50px);
+    	padding-top: rem(20px);
+    }
   }
 }
 
@@ -24,6 +29,10 @@
 .order__form-row {
 	display: flex;
 	margin-bottom: rem(16px);
+	@include phones {
+		justify-content: center;
+		margin-bottom: rem(40px);
+	}
 }
 
 .order__form-block {

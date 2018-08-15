@@ -27,7 +27,7 @@
     right: 0;
     bottom: 0;
     background: transparent;
-    transition: .3s;
+    transition: .5s;
   }
   &:hover {
     .review__hover {
@@ -57,15 +57,15 @@
   transform: translate(-50%, -50%) scale(.7);
   opacity: 0;
   padding: 17% 12% 0;
-  transition: .3s;
+  transition: .5s;
   z-index: 10;
   @include tablets {
     text-align: center;
-    padding: 3% 9%;
+    padding: 10%;
   }
 
   @include phones {
-    top: 70%;
+    top: 60%;
   }
 }
 

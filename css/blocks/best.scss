@@ -29,9 +29,17 @@
  	}
 }
 
+.best__icon {
+	@include phones {
+		width: 30%;
+		margin-right: rem(20px);
+	}
+}
+
 .best__desc {
 	@include phones {
 		text-align: left;
+		width: 65%;
 	}
 }
 

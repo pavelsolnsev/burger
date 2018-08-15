@@ -10,7 +10,7 @@
 	height: 100%;
 	&.active {
 		.menu-acco__trigger-text {
-			color: red;
+			color: $yellow;
 		}
 	}
 }
@@ -45,8 +45,7 @@
 	height: 100%;
 	background: rgba(#2f3234, .93);
 	display: flex;
-	width: 0;
-	overflow: hidden;
+	float: left;
 }
 
 .menu-acco__text {

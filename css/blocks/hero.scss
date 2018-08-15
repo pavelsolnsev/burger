@@ -39,10 +39,17 @@
 
 .hero__info {
 	 padding-top: rem(60px);
+   .section__title {
+    font-size: rem(65px)
+  }
+}
+
+.hero__icon {
+  margin-right: rem(10px);
 }
 
 .hero__desc {
-  	font-size: rem(65px);
+  	font-size: rem(60px);
   	color: #fff;
   	font-family: 'Lifehack Medium';
   	line-height: 1em;

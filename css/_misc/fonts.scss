@@ -4,16 +4,14 @@
   src: url('../fonts/Gagalin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/Gagalin-Regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/Gagalin-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Gagalin-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gagalin-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Gagalin-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Lifehack Medium';
-  src: url('../fonts/Lifehack Medium.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Lifehack Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Lifehack Medium.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Lifehack Medium.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Lifehack Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Lifehack Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'Lifehack-Medium';
+  src: url('../fonts/Lifehack-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
