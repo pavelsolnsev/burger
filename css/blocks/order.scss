@@ -2,9 +2,12 @@
 	background: #1b1b1b url(../img/form.jpg) center center / cover no-repeat;
 	.section__title {
     text-align: center;
-    @include phones {
-    	line-height: 1.2em;
+    @include tablets {
     	font-size: rem(50px);
+    }
+    @include phones {
+    	line-height: 1em;
+    	font-size: rem(35px);
     	padding-top: rem(20px);
     }
   }
