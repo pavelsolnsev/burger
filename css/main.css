@@ -1098,7 +1098,7 @@ button, button:hover, button:focus, button:active {
   overflow: hidden; }
 
 .menu-acco__item_active .menu-acco__content {
-  width: 540px; }
+  width: 50vw; }
 
 .menu-acco__item_active .menu-acco__text {
   -webkit-animation: acco-text .8s linear forwards;
