@@ -8,6 +8,7 @@
 
 .menu-acco__item {
 	height: 100%;
+	display: flex;
 	&.active {
 		.menu-acco__trigger-text {
 			color: $yellow;
@@ -21,7 +22,6 @@
 	height: 100%;
 	position: relative;
 	@include cover;
-	float: left;
 	@include phones {
 		width: rem(45px);
 	}
@@ -44,8 +44,17 @@
 .menu-acco__content {
 	height: 100%;
 	background: rgba(#2f3234, .93);
-	display: flex;
-	float: left;
+	transition: width .6s;
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-acco__item_active .menu-acco__content {
+  width: 540px;
+}
+
+.menu-acco__item_active .menu-acco__text {
+  animation: acco-text .8s linear forwards;
 }
 
 .menu-acco__text {
@@ -53,7 +62,5 @@
 	color: #fff;
 	font-weight: 300;
 	padding: rem(60px) rem(30px);
-	width: 100%;
   	line-height: 1.8;
-  	display: none;
 }

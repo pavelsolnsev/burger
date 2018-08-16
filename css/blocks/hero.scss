@@ -46,6 +46,9 @@
 
 .hero__icon {
   margin-right: rem(10px);
+  @include tablets {
+    margin-right: 0;
+  }
 }
 
 .hero__desc {
