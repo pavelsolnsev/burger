@@ -1109,7 +1109,8 @@ button, button:hover, button:focus, button:active {
   color: #fff;
   font-weight: 300;
   padding: 3.75rem 1.875rem;
-  line-height: 1.8; }
+  line-height: 1.8;
+  display: none; }
 
 .order {
   background: #1b1b1b url(../img/form.jpg) center center/cover no-repeat; }
@@ -1270,6 +1271,231 @@ button, button:hover, button:focus, button:active {
   font-size: 1.5625rem; }
   .socials__link:hover {
     color: #fff; }
+
+.burger {
+  background: #f9b33b;
+  background: -moz-linear-gradient(top, #f9b33b 0%, #eb8f38 47%, #eb8f38 58%, #f9b33b 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f9b33b), color-stop(47%, #eb8f38), color-stop(58%, #eb8f38), color-stop(100%, #f9b33b));
+  background: -webkit-linear-gradient(top, #f9b33b 0%, #eb8f38 47%, #eb8f38 58%, #f9b33b 100%);
+  background: -o-linear-gradient(top, #f9b33b 0%, #eb8f38 47%, #eb8f38 58%, #f9b33b 100%);
+  background: -ms-linear-gradient(top, #f9b33b 0%, #eb8f38 47%, #eb8f38 58%, #f9b33b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b33b), color-stop(47%, #eb8f38), color-stop(58%, #eb8f38), to(#f9b33b));
+  background: linear-gradient(to bottom, #f9b33b 0%, #eb8f38 47%, #eb8f38 58%, #f9b33b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b33b', endColorstr='#f9b33b', GradientType=0 ); }
+  .burger .section__title {
+    line-height: .9em;
+    margin-bottom: 3.125rem;
+    font-size: 3.75rem; }
+    @media screen and (max-width: 768px) {
+      .burger .section__title {
+        font-size: 4.5rem; } }
+    @media screen and (max-width: 480px) {
+      .burger .section__title {
+        font-size: 3.125rem;
+        width: 17rem;
+        margin: 0 auto 3.125rem auto; } }
+
+.sldier {
+  overflow: hidden; }
+
+.slider__block-left {
+  position: relative;
+  padding-top: 3.9375rem;
+  padding-bottom: 1.75rem; }
+
+@media screen and (max-width: 768px) {
+  .slider__block-right {
+    width: 74%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 480px) {
+  .slider__block-right {
+    width: auto; } }
+
+.slider__item {
+  position: relative;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .slider__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .slider__burger {
+    margin-bottom: 1.25rem; } }
+
+.slider__burger img {
+  max-width: 28.75rem; }
+  @media screen and (max-width: 768px) {
+    .slider__burger img {
+      width: 100%; } }
+
+.slider__text p {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.7em;
+  font-weight: 300; }
+
+@media screen and (max-width: 768px) {
+  .slider__text {
+    margin-bottom: 3.125rem; } }
+
+@media screen and (max-width: 768px) {
+  .silder__price {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+.slider__sum {
+  font-family: 'Gagalin-Regular';
+  font-size: 3.75rem;
+  color: #e35028;
+  margin-right: 0.625rem; }
+
+.slider__sum span {
+  font-size: 1.5625rem;
+  margin-left: 0.3125rem; }
+
+.slider__button {
+  margin-top: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .slider__button {
+      margin-top: 1.875rem; } }
+
+.owl-carousel .owl-item img {
+  width: auto;
+  display: inline-block; }
+  @media screen and (max-width: 768px) {
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 100%;
+      margin: 0 auto; } }
+
+.slider .owl-nav button.owl-prev {
+  width: 0.8125rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 50%;
+  background: url(../img/arrow-next.png) 0 0 no-repeat;
+  left: 0%;
+  background-size: 100% 100%; }
+
+.owl-prev span {
+  display: none; }
+
+.slider .owl-nav button.owl-next {
+  width: 0.8125rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 50%;
+  background: url(../img/arrow-prev.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  right: 0%; }
+
+.owl-next span {
+  display: none; }
+
+.ingredients {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 5.625rem;
+  height: 5.625rem;
+  text-align: center;
+  background-color: #f08c33;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer; }
+  .ingredients:hover {
+    background-color: #e35028; }
+    .ingredients:hover .ingredients__menu {
+      left: 100%;
+      opacity: 1; }
+
+.ingredients__icon {
+  padding: 0.625rem 0; }
+  @media screen and (max-width: 480px) {
+    .ingredients__icon {
+      padding: 0.3125rem 0; } }
+
+.ingredients__res {
+  font-size: 0.875rem;
+  font-family: 'Gagalin-Regular';
+  color: #fff; }
+
+.ingredients__menu {
+  width: 17.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3125rem;
+  -webkit-transition: .3s opacity;
+  -o-transition: .3s opacity;
+  transition: .3s opacity;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  padding: 0.625rem 1.1875rem 0.625rem 1.75rem; }
+
+.ingredients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ingredients__img {
+  width: 4.5rem;
+  height: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ingredients__link {
+  font-weight: 700; }
+
+.ingredients__gram {
+  font-weight: 700;
+  margin-left: auto; }
+
+.kall {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .kall {
+      top: 0%;
+      bottom: auto;
+      left: auto;
+      right: 0; } }
+
+.kall__txt {
+  color: #f9d4af;
+  font-family: 'Gagalin-Regular';
+  font-size: 1.25rem;
+  margin-top: -2.5rem; }
+
+.kall__txt span {
+  display: block;
+  margin-top: 0.625rem;
+  font-size: 0.875rem; }
 
 .fixed-menu {
   position: fixed;

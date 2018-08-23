@@ -1,0 +1,68 @@
+.ingredients {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	width: rem(90px);
+	height: rem(90px);
+	text-align: center;
+	background-color: #f08c33;
+	justify-content: center;
+	display: flex;
+	transition: .3s;
+    cursor: pointer;
+    &:hover {
+		background-color: #e35028;
+		.ingredients__menu {
+			left: 100%;
+			opacity: 1;
+		}
+    }
+}
+
+.ingredients__icon {
+	padding: rem(10px) 0;
+	@include phones {
+ 	padding: rem(5px) 0;
+	}
+}
+ 
+.ingredients__res {
+	font-size: rem(14px);
+	font-family: 'Gagalin-Regular';
+	color: #fff;
+}
+
+.ingredients__menu {
+	width: rem(280px);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: rem(5px);
+    transition: .3s opacity;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    transition: opacity .3s;
+    padding: rem(10px) rem(19px) rem(10px) rem(28px);
+}
+
+.ingredients__item {
+	display: flex;
+	align-items: center;
+
+}
+
+.ingredients__img {
+	width: 4.5rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients__link {
+	font-weight: 700;
+}
+
+.ingredients__gram {
+	font-weight: 700;
+	margin-left: auto;
+}

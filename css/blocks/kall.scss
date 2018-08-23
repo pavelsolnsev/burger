@@ -1,0 +1,26 @@
+.kall {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	text-align: center;
+	@include tablets {
+		top: 0%;
+		bottom: auto;
+		left: auto;
+		right: 0;
+}
+}
+
+.kall__txt {
+	color: #f9d4af;
+	font-family: 'Gagalin-Regular';
+	font-size: rem(20px);
+	margin-top: rem(-40px);
+}
+
+.kall__txt span {
+	display: block;
+	margin-top: rem(10px);
+	font-size: rem(14px);
+
+}

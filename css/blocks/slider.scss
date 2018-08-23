@@ -1,0 +1,116 @@
+.sldier {
+	overflow: hidden;
+}
+
+.slider__block-left {
+	position: relative;
+	padding-top: rem(63px);
+    padding-bottom: rem(28px);
+}
+
+.slider__block-right {
+	@include tablets {
+		width: 74%;
+    	margin: 0 auto;
+	}
+	@include phones {
+		width: auto;
+	}
+}
+
+.slider__item {
+	position: relative;
+  	width: 100%; 
+	@include tablets {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.slider__burger {
+	@include tablets {
+		margin-bottom: rem(20px);
+	}
+}
+
+.slider__burger img {
+	max-width: rem(460px);
+	@include tablets {
+		width: 100%;
+	}
+}
+
+.slider__text p {
+	color: #fff;
+	font-size: rem(14px);
+	line-height: 1.7em;
+	font-weight: 300;
+}
+
+.slider__text{
+	@include tablets {
+		margin-bottom: rem(50px);
+	}
+}
+
+.silder__price {
+	@include tablets {
+		justify-content: center;
+	}
+}
+
+.slider__sum {
+	font-family: 'Gagalin-Regular';
+	font-size: rem(60px);
+	color: #e35028;
+	margin-right: rem(10px);
+}
+
+.slider__sum span {
+	font-size: rem(25px);
+	margin-left: rem(5px);
+}
+
+.slider__button {
+	margin-top: rem(40px);
+	@include phones {
+		margin-top: rem(30px);
+	}
+}
+
+	.owl-carousel {
+		.owl-item img {
+	    width: auto;
+	    display: inline-block;
+	    @include tablets {	
+		    display: block;
+		    width: 100%;
+		    margin: 0 auto;
+	    }
+	}
+}
+
+.slider .owl-nav button.owl-prev {
+    width: rem(13px);
+    height: rem(27px);
+    position: absolute;
+    top: 50%;
+    background: url(../img/arrow-next.png) 0 0 no-repeat;
+    left: 0%;
+    background-size: 100% 100%;
+}
+    .owl-prev span {
+      display: none; 
+}
+  .slider .owl-nav button.owl-next {
+   	width: rem(13px);
+    height: rem(27px);
+    position: absolute;
+    top: 50%;
+    background: url(../img/arrow-prev.png) 0 0 no-repeat;
+    background-size: 100% 100%; 
+    right: 0%;
+}
+    .owl-next span {
+      display: none; 
+}

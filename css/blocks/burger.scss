@@ -1,0 +1,23 @@
+.burger {
+	background: rgba(249,179,59,1);
+	background: -moz-linear-gradient(top, rgba(249,179,59,1) 0%, rgba(235,143,56,1) 47%, rgba(235,143,56,1) 58%, rgba(249,179,59,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,179,59,1)), color-stop(47%, rgba(235,143,56,1)), color-stop(58%, rgba(235,143,56,1)), color-stop(100%, rgba(249,179,59,1)));
+	background: -webkit-linear-gradient(top, rgba(249,179,59,1) 0%, rgba(235,143,56,1) 47%, rgba(235,143,56,1) 58%, rgba(249,179,59,1) 100%);
+	background: -o-linear-gradient(top, rgba(249,179,59,1) 0%, rgba(235,143,56,1) 47%, rgba(235,143,56,1) 58%, rgba(249,179,59,1) 100%);
+	background: -ms-linear-gradient(top, rgba(249,179,59,1) 0%, rgba(235,143,56,1) 47%, rgba(235,143,56,1) 58%, rgba(249,179,59,1) 100%);
+	background: linear-gradient(to bottom, rgba(249,179,59,1) 0%, rgba(235,143,56,1) 47%, rgba(235,143,56,1) 58%, rgba(249,179,59,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b33b', endColorstr='#f9b33b', GradientType=0 );
+	.section__title {
+		line-height: .9em;
+		margin-bottom: rem(50px);
+		font-size: rem(60px);
+		@include tablets {
+			font-size: rem(72px);
+		}
+		@include phones {
+			font-size: rem(50px);
+			width: rem(272px);
+			margin: 0 auto rem(50px) auto;
+		} 
+	}
+}

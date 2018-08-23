@@ -26,3 +26,18 @@ for (let i = 0; i < accoItem.length; i++) {
     }
   })
 }
+
+// slider 
+
+ $('.owl-carousel').owlCarousel({
+       loop: true,
+        nav: true,
+        margin: 0,
+        items: 1,
+        autoHeight: true,
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: true,
+        freeDrag: false,
+        dots: false
+})
