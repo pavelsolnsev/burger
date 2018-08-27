@@ -23,12 +23,8 @@
 	height: 100%;
 	width: 50%;
 	background: rgba(#2f3234, .93);
-  	padding-left: 10%;
-  	flex-direction: column;
-  	display: flex;
-  	justify-content: center;
+  	padding: 8%;
 	@include tablets {
 		width: 100%;
-		padding-left: 0;
 	}
 }
