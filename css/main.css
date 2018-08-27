@@ -671,7 +671,8 @@ button, button:hover, button:focus, button:active {
   margin-left: 1.875rem;
   border: none;
   background: transparent;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .header__humburger {
       display: -webkit-box;

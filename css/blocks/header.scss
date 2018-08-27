@@ -30,6 +30,7 @@
 	border: none;
 	background: transparent;
 	display: none;
+	cursor: pointer;
 	@include tablets {
 		display: flex;
 	}
