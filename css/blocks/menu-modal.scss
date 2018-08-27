@@ -1,12 +1,12 @@
 .menu-modal {
 	background: rgba(47, 50, 52, 0.99);
 	position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 100%;
+    bottom: 100%;
+    right: 100%;
+    left: 100%;
     z-index: 100;
-    transition: bottom .3s;
+    transition: .7s;
     overflow: hidden;
 }
 
@@ -81,4 +81,15 @@
 	    transform: rotate(-45deg);
 	    transform-origin: center;
 	}
+}
+
+.menu-modal_active {
+	top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.blocked-scroll {
+    overflow: hidden;
 }

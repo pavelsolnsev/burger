@@ -72,7 +72,30 @@ for (let i = 0; i < accovItem.length; i++) {
 
  // Modal window
 
-    $('.button, .btn-footer').click(function (e) {
-        e.preventDefault();
-        $('#exampleModal').arcticmodal();
-    }); 
+const body = document.querySelector('body');
+const hamburger = document.querySelector('#hamburger-menu');
+const closeMobileMenu = document.querySelector('#menu-modal__close');
+const mobileMenu = document.querySelector('#exampleModal');
+
+function blockedScroll() {
+  if(body.classList.contains('blocked-scroll')) {
+    body.classList.remove('blocked-scroll');
+  } else {
+    body.classList.add('blocked-scroll');
+  }
+}
+
+function getStyle(elem) {
+  return window.getComputedStyle ? getComputedStyle(elem, "") : elem.currentStyle;
+}
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.add('menu-modal_active');
+  blockedScroll();
+  
+});
+
+closeMobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('menu-modal_active');
+  blockedScroll();
+});

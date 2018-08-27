@@ -1562,14 +1562,14 @@ button, button:hover, button:focus, button:active {
 .menu-modal {
   background: rgba(47, 50, 52, 0.99);
   position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  top: 100%;
+  bottom: 100%;
+  right: 100%;
+  left: 100%;
   z-index: 100;
-  -webkit-transition: bottom .3s;
-  -o-transition: bottom .3s;
-  transition: bottom .3s;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s;
   overflow: hidden; }
 
 .menu-modal__list {
@@ -1650,3 +1650,12 @@ button, button:hover, button:focus, button:active {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center; }
+
+.menu-modal_active {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.blocked-scroll {
+  overflow: hidden; }
