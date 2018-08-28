@@ -1,0 +1,42 @@
+.order-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(47, 50, 52, 0.99);
+  z-index: 100;
+  display: none;
+}
+
+.order-popup__content {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.order-popup__text {
+  font-size: 0.875rem;
+  color: #2f3234;
+  text-align: center;
+  margin-bottom: 1.0625rem;
+}
+
+.order-popup__button {
+  background-color: #e45028;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+}

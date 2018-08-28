@@ -9,11 +9,6 @@
 .menu-acco__item {
 	height: 100%;
 	display: flex;
-	&:active {
-		.menu-acco__trigger-text {
-			color: $yellow;
-		}
-	}
 }
 
 .menu-acco__trigger {
@@ -63,4 +58,8 @@
 	font-weight: 300;
 	padding: rem(60px) rem(30px);
   	line-height: 1.8;
+ }
+
+ .menu-acco__item_active .menu-acco__trigger-text {
+ 	color: $yellow;
  }

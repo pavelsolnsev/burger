@@ -15,7 +15,7 @@
 </head>
 <body>
 	 <div class="wrapper">
-		<section class="section hero">
+		<section class="section hero" id="hero">
 			<div class="container hero__container">
 				<header class="header d-flex center space-between">
 					<div class="header__logo">
@@ -28,27 +28,27 @@
 							<nav class="nav d-flex center">
 								<ul class="nav__list d-flex center space-between">
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#best" class="nav__link">
 											О нас
 										</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#burger" class="nav__link">
 											Бургеры 
 										</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#team" class="nav__link">
 											Команда  
 										</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#menu" class="nav__link">
 											Меню 
 										</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#reviews" class="nav__link">
 											Отзывы
 										</a>
 									</li>
@@ -58,7 +58,7 @@
 										</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
+										<a href="#map" class="nav__link">
 											Контакты
 										</a>
 									</li>
@@ -93,7 +93,7 @@
         		</a>
 			</div>
 		</section>
-		<section class="section best">
+		<section class="section best" id="best">
 			<div class="container">
 				<h1 class="section__title section__title_black section__title_center">
 					Мы лучшие
@@ -150,7 +150,7 @@
 			</div>
 		</section>
 
-		<section class="section burger">  
+		<section class="section burger" id="burger">  
 			<div class="container">
 				<ul class="slider owl-carousel">
 					<li class="slider__item d-flex">
@@ -493,7 +493,7 @@
 			</div>
 		</section>
 
-		<section class="section menu">
+		<section class="section menu" id="menu">
         	<h1 class="section__title section__title_white menu__title">
        			Меню
     		</h1>
@@ -551,7 +551,7 @@
 		        </li>
         	</ul>
       	</section>
-		<section class="section team">
+		<section class="section team" id="team">
         	<div class="team__section">
           		<div class="team__content">
             		<h1 class="section__title">
@@ -642,9 +642,9 @@
           		</div>
         	</div>
       	</section>
-		<section class="section reviews">
-			<ul class="reviews__list">
-				<li class="reviews__item">
+		<section class="section reviews" id="reviews">
+			<ul class="review__list">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo1.jpg')"></div>
 			          <div class="review__hover">
@@ -655,18 +655,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
+				             <button class="review__view">
+				           		Подробнее
+				           </button>
 			          </div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo2.jpg')"></div>
 			          <div class="review__hover">
@@ -677,18 +672,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
+				              <button class="review__view">
+				           		Подробнее
+				           </button>
 			          </div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo3.jpg')"></div>
 			          <div class="review__hover">
@@ -699,18 +689,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
+				              <button class="review__view">
+				           		Подробнее
+				           </button>
 			          </div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo4.jpg')"></div>
 			          <div class="review__hover">
@@ -721,18 +706,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
-			          </div>
+				            <button class="review__view">
+				           		Подробнее
+				           	</button>
+			          	</div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo5.jpg')"></div>
 			          <div class="review__hover">
@@ -743,18 +723,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
-			          </div>
+				          	<button class="review__view">
+				           		Подробнее
+				           </button>
+			          	</div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo6.jpg')"></div>
 			          <div class="review__hover">
@@ -765,18 +740,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
+				            <button class="review__view">
+				           		Подробнее
+				           </button>
 			          </div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo7.jpg')"></div>
 			          <div class="review__hover">
@@ -787,18 +757,13 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
-			          </div>
+				           <button class="review__view">
+				           		Подробнее
+				           </button>
+			          	</div>
 			        </div>
           		</li>
-				<li class="reviews__item">
+				<li class="review__item">
 			        <div class="review">
 			          <div class="review__photo" style="background-image: url('img/photo8.jpg')"></div>
 			          <div class="review__hover">
@@ -809,122 +774,100 @@
 				            	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 				               	могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
 				            </div>
-				            <div class="review__button-wrap">
-				              	<a class="review__view" href="#full-review">
-				              		Подробнее
-				              	</a>
-				              	<a class="review__view review__view_read" href="#full-review">
-				          			Читать отзыв
-				              	</a>
-				            </div>
+				           <button class="review__view">
+				           		Подробнее
+				           </button>
 			          </div>
 			        </div>
           		</li>
 			</ul>
 		</section>
-		<section class="section order">
-        	<div class="container">
-       			<h1 class="section__title">
-       				Закажите доставку
-       			</h1>
-         		<form class="order__form-tag" id="order-form">
-            		<div class="order__form">
-				        <div class="order__form-col">
-				            <div class="order__form-row">
-					            <label class="order__form-block">
-					                <h4 class="order__form-label">
-					                	Имя
-					            	</h4>
-					                <input class="order__form-input" name="name" type="text" placeholder="">
-					            </label>
-					            <label class="order__form-block">
-					                <h4 class="order__form-label">
-					                	Телефон
-					            	</h4>
-					                <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
-					            </label>
-				            </div>
-				            <div class="order__form-row">
-				              	<label class="order__form-block">
-				                	<h4 class="order__form-label">
-				                		Улица
-				                	</h4>
-				                	<input class="order__form-input" name="street" type="text" placeholder="">
-				             	</label>
-				            </div>
-				            <div class="order__form-row">
-					            <label class="order__form-block">
-					               	<h4 class="order__form-label">
-					               		Дом
-					               	</h4>
-					                <input class="order__form-input" name="home" type="text" placeholder="">
-					            </label>
-					            <label class="order__form-block">
-					                <h4 class="order__form-label">
-					                	Корпус
-					            	</h4>
-					                <input class="order__form-input" name="part" type="text" placeholder="">
-					            </label>
-					              <label class="order__form-block">
-					                <h4 class="order__form-label">
-					                	Квартира
-					            	</h4>
-					                <input class="order__form-input" name="appt" type="text" placeholder="">
-					            </label>
-					            <label class="order__form-block order__form-block_none">
-					                <h4 class="order__form-label">
-					                	Этаж
-					            	</h4>
-					                <input class="order__form-input" name="floor" type="text" placeholder="">
-					            </label>
-				            </div>
-				        </div>
-             			<div class="order__form-col">
-                			<div class="order__form-row">
-					            <label class="order__form-block">
-					                <h4 class="order__form-label">
-					               	 	Комментарий
-					            	</h4>
-					                <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
-					            </label>
-                			</div>
-                			<div class="order__form-buttons">
-                 				<div class="order__form-row">
-					                <label class="order__radio">
-						                <input class="order__radio-elem" name="payment" type="radio">
-						                <div class="order__radio-fake"></div>
-						                <h4 class="order__radio-title">
-						                 	Потребуется сдача
-						             	</h4>
-					                </label>
-					                <label class="order__radio">
-					                  	<input class="order__radio-elem" name="payment" type="radio">
-					                  	<div class="order__radio-fake"></div>
-					                  	<h4 class="order__radio-title">
-					                  		Оплата по карте
-					                  	</h4>
-					                </label>
-                  				</div>
-                  				<div class="order__form-row">
-					                <label class="order__radio order__radio_checkbox">
-					                  	<input class="order__radio-elem" name="callback" type="checkbox">
-					                 	<div class="order__radio-fake"></div>
-					                  	<h4 class="order__radio-title">
-					                 		 Не перезванивать
-					              		</h4>
-					                </label>
-                 				</div>
-                  				<div class="order__form-row">
-					                <input class="order__form-button btn" name="" type="submit" value="Заказать">
-					                <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
-                 				</div>
-                			</div>
-              			</div>
-            		</div>
-        		</form>
-        	</div>
-      </section>
-		<section class="section map">
+		<section id="order" class="section order">
+			<div class="container">
+				<div class="row">
+					<h1 class="section__title">
+						Закажите доставку
+					</h1>
+					<form action="/" class="order__form" method="POST">
+						<div class="order__left-block">
+							<div class="order__form-row">
+								<div class="order__item">
+									<label for="name" class="order__label">Имя</label>
+									<input id="name" name="name" type="text" class="order__field" required>
+								</div>
+
+								<div class="order__item">
+									<label for="phone" class="order__label">Телефон</label>
+									<input id="phone" name="phone" type="text" class="order__field" required>
+								</div>
+							</div>
+							<div class="order__form-row">
+								<div class="order__item">
+									<label for="street" class="order__label">Улица</label>
+									<input id="street" name="street" type="text" class="order__field" required>
+								</div>
+							</div>
+							<div class="order__form-row">
+								<div class="order__item">
+									<label for="house_number" class="order__label">Дом</label>
+									<input id="house_number" name="house_number" type="text" class="order__field" required>
+								</div>
+								<div class="order__item">
+									<label for="corp" class="order__label">Корпус</label>
+									<input id="corp" name="corp" type="text" class="order__field">
+								</div>
+								<div class="order__item">
+									<label for="apartment" class="order__label">Квартира</label>
+									<input id="apartment" name="apartment" type="text" class="order__field">
+								</div>
+								<div class="order__item">
+									<label for="floor" class="order__label">Этаж</label>
+									<input id="floor" name="floor" type="text" class="order__field">
+								</div>
+							</div>
+						</div>
+						<div class="order__right-block">
+							<div class="order__form-row">
+								<div class="order__item">
+									<label for="message" class="order__label">Комментарий</label>
+									<textarea id="message" name="message" class="order__field order__field_area"></textarea>
+								</div>
+							</div>
+							<div class="order__form-row">
+								<div class="order__item_radio">
+									<label class="order__label order__label_radio">
+										<input name="pay" type="radio" class="order__field order__field_radio" value="sale" checked>
+										<div class="order__fake-radio"></div>
+										<span class="order__fake-text">Потребуется сдача</span>
+									</label>
+								</div>
+								<div class="order__item_radio">
+									<label class="order__label order__label_radio">
+										<input name="pay" type="radio" class="order__field order__field_radio" value="paypal">
+										<div class="order__fake-radio"></div>
+										<span class="order__fake-text">Оплата по карте</span>
+									</label>
+								</div>
+							</div>
+							<div class="order__form-row">
+								<div class="order__item_checkbox">
+									<label class="order__label order__label_checkbox">
+										<input name="not_disturb" type="checkbox" class="order__field order__field_checkbox" value="yes" checked>
+										<div class="order__fake-checkbox"></div>
+										<span class="order__fake-text">Не перезванивать</span>
+									</label>
+								</div>
+							</div>
+							<div class="order__form-row">
+								<button type="submit" class="btn order-btn order__button">Заказать</button>
+								<button type="reset" class="reset-btn">Очистить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="section map" id="map">
 			<div class="yandex-map" id="map"></div>
 			<footer class="footer">
 				<div class="container">
@@ -997,15 +940,15 @@
 			</li>
 		</ul>
 
-		<!-- Modal window -->
-		<nav class="menu-modal" id="exampleModal">
+		<!-- Modal hamburger -->
+		<nav class="menu-modal" id="menu-modal">
 			<a href="#" class="menu-modal__logo">
 				<img class="menu__icon" src="./img/icons/logo.svg">
 			</a>
 			<a href="#" class="menu-modal__close" id="menu-modal__close"></a>
 			<ul class="menu-modal__list">
 				<li class="menu-modal__item">
-					<a href="#" class="menu-modal__link">
+					<a href="#best" class="menu-modal__link">
 						О нас
 					</a>
 				</li>
@@ -1020,12 +963,12 @@
 					</a>
 				</li>
 				<li class="menu-modal__item">
-					<a href="#" class="menu-modal__link">
+					<a href="#menu" class="menu-modal__link">
 						Меню
 					</a>
 				</li>
 				<li class="menu-modal__item">
-					<a href="#" class="menu-modal__link">
+					<a href="#reviews" class="menu-modal__link">
 						Отзывы
 					</a>
 				</li>
@@ -1036,9 +979,30 @@
 				</li>
 			</ul>
 		</nav>
+
+		<!-- reviews-popup -->
+		<div class="reviews-popup">
+			<div class="reviews-popup__content">
+				<div class="reviews-popup__title">
+					Константин Спилберг
+				</div>
+				<div class="reviews-popup__shorttext"> 
+				</div>
+				<div class="reviews-popup__close"></div>
+			</div>
+		</div>
+
+		<!-- order-popup -->
+		<div class="order-popup">
+			<div class="order-popup__content">
+				<div class="order-popup__text"></div>
+				<button class="order-popup__button">
+					Закрыть
+				</button>
+			</div>
+		</div>
+
 	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

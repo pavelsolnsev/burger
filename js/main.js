@@ -26,22 +26,6 @@ for (let i = 0; i < accoItem.length; i++) {
   })
 }
 
-// slider 
-
- $('.owl-carousel').owlCarousel({
-       loop: true,
-        nav: true,
-        margin: 0,
-        items: 1,
-        autoHeight: true,
-        mouseDrag: true,
-        touchDrag: true,
-        pullDrag: true,
-        freeDrag: false,
-        dots: false
-})
-
-
 // team accordeon
 const accoV = document.querySelector('.team');
 const accovItem = document.querySelectorAll('.team-acco__item');
@@ -70,12 +54,12 @@ for (let i = 0; i < accovItem.length; i++) {
   })
 }
 
- // Modal window
 
+ // Modal window
 const body = document.querySelector('body');
 const hamburger = document.querySelector('#hamburger-menu');
 const closeMobileMenu = document.querySelector('#menu-modal__close');
-const mobileMenu = document.querySelector('#exampleModal');
+const mobileMenu = document.querySelector('#menu-modal');
 
 function blockedScroll() {
   if(body.classList.contains('blocked-scroll')) {
@@ -98,4 +82,40 @@ hamburger.addEventListener('click', () => {
 closeMobileMenu.addEventListener('click', () => {
   mobileMenu.classList.remove('menu-modal_active');
   blockedScroll();
+});
+
+
+// popup reviews
+const reviews = document.querySelector('.review__list');
+const reviewsPopupBlock = document.querySelector('.reviews-popup');
+const reviewsPopupName = document.querySelector('.reviews-popup__title');
+const reviewsPopupText = document.querySelector('.reviews-popup__shorttext');
+const reviewsPopupClose = document.querySelector('.reviews-popup__close');
+
+
+reviews.addEventListener('click', (e) => {
+  const element = e.target;
+  if(element.classList.contains('review__view')) {
+    const elemText = element.previousElementSibling.innerText;
+    const elemName = element.previousElementSibling.previousElementSibling.innerText;
+
+    reviewsPopupName.innerText = elemName;
+    reviewsPopupText.innerText = elemText;
+
+    reviewsPopupBlock.classList.add("reviews-popup_active");
+    reviewsPopupBlock.style.display = 'block';
+    blockedScroll();
+  }
+});
+
+reviewsPopupClose.addEventListener('click', () => {
+  reviewsPopupBlock.classList.remove("reviews-popup_active");
+  reviewsPopupBlock.style.display = "none";
+  blockedScroll();
+});
+
+document.addEventListener('keyup', (e) => {
+  if(reviewsPopupBlock.classList.contains('reviews-popup_active') && e.keyCode === 27) {
+    reviewsPopupClose.click();
+  }  
 });

@@ -14,91 +14,173 @@
 }
 
 .order__form {
-	display: flex;
-	margin-left: -5%;
-	@include tablets {
-  		flex-direction: column;
-  	}
-}
-
-.order__form-col {
- 	width: 45%;
-  	margin-left: 5%;
-  	@include tablets {
-  		width: auto;
-  	}
-}
-
-.order__form-row {
-	display: flex;
-	margin-bottom: rem(16px);
-	@include phones {
-		justify-content: center;
-		margin-bottom: rem(40px);
-	}
-}
-
-.order__form-block {
-	flex: 1;
-	margin-left: 20px;
-
-	&:first-child {
-		margin-left: 0;
-	}
-}
-
-.order__form-block_none {
-	@include phones {
-		display: none;
-	}
-}
-
-.order__form-input {
-	width: 100%;
-	padding: rem(8px) rem(20px);
-	border-radius: rem(5px);
-	font-size: rem(14px);
-	border: rem(1px) solid #d1cfcb;
-}
-
-.order__form-label {
-	margin-bottom: rem(7px);
-	&:nth-child(7) {
-		@include phones {
-			display: none;
-		}
-	}
-}
-
-.order__form-input_textarea {
-	height: rem(110px);
-	resize: none;
-}
-
-.order__radio {
-  margin-right: rem(20px);
-  cursor: pointer;
   display: flex;
-  align-items: center;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.order__radio-title {
-  margin-left: rem(7px);
+.order__left-block {
+  width: 50%;
+  margin-right: 1.25rem;
+  @include tablets {
+    width: 70%;
+    margin-right: 0;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
-.order__form-button {
-	
+.order__right-block {
+  width: 50%;
+  @include tablets {
+    width: 70%;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
-.order__form-button_reset {
-  padding-left: 0;
-  padding-right: 0;
-  text-transform: none;
-  background: transparent;
+.order__item {
+  display: flex;
+  flex-direction: column;
+}
+.order__form-row {
+  display: flex;
+  margin-bottom: 1.25rem;
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.order__item {
+  flex: 1;
+  width: 100%;
+  margin-right: 1.25rem;
+}
+
+.order__item:last-child {
+  margin-right: 0;
+}
+
+.order__label {
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.625rem;
   color: #fff;
+  font-weight: 300;
+}
+
+.order__label_radio {
+  display: flex;
+}
+
+.order__label_checkbox {
+  display: flex;
+}
+
+.order__field {
+  height: 2.25rem;
+  padding: 0.3125rem 1.25rem;
+  border-radius: 0.3125rem;
   border: none;
-  margin-left: rem(20px);
+  outline: none;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  color: #2f3234;
+  width: 100%;
+}
+
+.order__field:focus {
+  border: 2px solid #f9b43b;
+}
+
+.order__field_area {
+  width: 100%;
+  height: 7.375rem;
+  resize: vertical;
+}
+
+.order__field_radio {
+  position: absolute;
+  left: -9999px;
+}
+
+.order__fake-radio {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  position: relative;
+  margin-right: .5rem;
+}
+
+.order__item_radio {
+  margin-right: 1.25rem;
+}
+
+.order__item_radio:last-child {
+  margin-right: 0;
+}
+
+.order__field_checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.order__fake-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: relative;
+  margin-right: .625rem;
+}
+
+.order__field_radio:checked + .order__fake-radio::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e25028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.order__field_checkbox:checked + .order__fake-checkbox::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 7px;			
+  border-left: 4px solid #e25028;
+  border-bottom: 4px solid #e25028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%) rotate(-45deg);
+  -ms-transform: translate(-50%, -60%) rotate(-45deg);
+  transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+.order-btn {
+  margin-right: 0.875rem;
   cursor: pointer;
 }
 
+.reset-btn {
+  background: 0 0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: none;
+  cursor: pointer;
+  border: none;
+}
 
