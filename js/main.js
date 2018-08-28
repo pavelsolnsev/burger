@@ -55,7 +55,7 @@ for (let i = 0; i < accovItem.length; i++) {
 }
 
 
- // Modal window
+// Modal window
 const body = document.querySelector('body');
 const hamburger = document.querySelector('#hamburger-menu');
 const closeMobileMenu = document.querySelector('#menu-modal__close');
