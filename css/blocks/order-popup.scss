@@ -7,6 +7,7 @@
   background: rgba(47, 50, 52, 0.99);
   z-index: 100;
   display: none;
+ 
 }
 
 .order-popup__content {
@@ -39,4 +40,9 @@
   border-radius: 5px;
   transition: .3s;
   cursor: pointer;
+  border: none;
+}
+
+.order-popup_active {
+  display: block;
 }
