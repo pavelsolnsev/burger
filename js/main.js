@@ -122,12 +122,11 @@ document.addEventListener('keyup', (e) => {
 
 // Ajax форма
 const form = document.querySelector('.order__form');
-const formButton = document.querySelector('.order__button');
 const orderPopup = document.querySelector('.order-popup');
 const orderPopupButton = document.querySelector('.order-popup__button');
 const orderPopupText = document.querySelector('.order-popup__text');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("order__button", (e) => {
   e.preventDefault();
   e.stopPropagation();
 
@@ -289,7 +288,7 @@ function onPlayerStateChange(event) {
 }
 
 $(".player__start").on("click", e => {
-  const playerStatus = player.getPlayerState(); // 0 - ended, 1 - played, 2 - paused ...
+  const playerStatus = player.getPlayerState(); 
 
   if (playerStatus !== 1) {
     player.playVideo();
