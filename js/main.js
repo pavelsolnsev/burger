@@ -334,3 +334,181 @@ function formatTime(time) {
 }
 
 
+// onePageScroll
+
+const sections = document.querySelectorAll('.section');
+const wrapper = document.querySelector('.maincontent');
+let inScroll = false;
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+
+
+body.addEventListener('wheel', (e) => {
+
+  // Если открыты различные оверлеи - блочим обработку события
+  if(body.classList.contains('blocked-scroll')) return;
+
+  const direction = getDirection(e);
+  const sectionIndex = getScrollIndex(direction);
+
+  scrollToSection(sectionIndex);
+
+});
+
+
+
+function getScrollIndex(direction) {
+  
+ // Определяем index текущей секции
+ const currentSectionIndex = getSectionIndex();
+
+ let sectionIndex;
+
+ // Если произощел скролл вниз
+ if(direction === "down") {
+    sectionIndex = currentSectionIndex + 1;
+
+    if(sectionIndex >= sections.length) {
+     return false;
+    }
+ }
+
+ // Если произощел скролл вниз
+ if(direction === "up") {
+  sectionIndex = currentSectionIndex - 1;
+
+  if(!currentSectionIndex) {
+    return false;
+  }
+ }
+
+  return sectionIndex;
+}
+
+body.addEventListener('click', (e) => {
+
+  if(e.target.hasAttribute('data-index-scroll')) {
+    e.preventDefault();
+    e.stopPropagation();
+    const sectionIndex = e.target.getAttribute('data-index-scroll');
+
+    if(e.target.classList.contains('menu-modal__link')) {
+      closeMobileMenu.click();
+    }
+    
+    scrollToSection(sectionIndex);
+  }
+});
+
+const arrowDown = document.querySelector('.down-arrow');
+arrowDown.addEventListener('click', (e) => {
+  e.preventDefault();
+  scrollToSection(1);
+});
+
+
+// Функция определяет направление прокрутки колеса мыши
+function getDirection(element) {
+  let direction;
+
+  if(element.deltaY > 0) { // Прокрутка вниз
+    direction = "down";
+  }
+ 
+  if(element.deltaY < 0) { // Прокрутка вверх
+   direction = "up";
+  }
+
+  return direction;
+}
+
+// Функция определяет текущий индекс показанной секции
+function getSectionIndex() {
+  
+  for(let i = 0; i < sections.length; i++) {
+    if(sections[i].classList.contains('section_active')) {
+      return i;
+    }
+  }
+
+}
+
+// Функция скрола к следующему или предыдущему элементу
+function scrollToSection(index) {
+
+  if(index === false) return;
+
+  const pagination = document.querySelectorAll('.fixed-menu__item');
+
+  // Скролим к секции
+  if(inScroll) return;
+
+  inScroll = true;
+
+  for(let i = 0; i < sections.length; i++) {
+    sections[i].classList.remove('section_active');
+  }
+  
+  const step = 100;
+  wrapper.style.transform = "translateY(-"+ index * step +"%)";
+  sections[index].classList.add('section_active');
+
+  for(let i = 0; i < pagination.length; i++) {
+    pagination[i].classList.remove('fixed-menu__item_active');
+  }
+
+  pagination[index].classList.add('fixed-menu__item_active');
+  
+  setTimeout(() => {
+    inScroll = false;
+  }, 1300); // продолжительность анимации + 300ms - потому что закончится инерция
+
+}
+
+if (isMobile) {
+  wrapper.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+  });
+
+  $(wrapper).swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      const scrollDirection = direction === 'down' ? 'up' : 'down';
+
+      const sectionIndex = getScrollIndex(scrollDirection);
+      scrollToSection(sectionIndex);
+    }
+  });
+}
+
+// Отмена ввода букв в поля 
+const numberInputs = document.querySelectorAll('[data-type="number"]');
+
+for(let i = 0; i < numberInputs.length; i++) {
+  numberInputs[i].addEventListener('keydown', (event) => {
+
+    let isNumber = false;
+    let isDash = false; 
+    let isControl = false;
+
+    if(event.key >= 0 || event.key <= 9 ) {
+      isNumber = true;
+    }
+
+    if(event.key == '-') {
+      isDash = true;
+    }
+
+    if(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace') {
+      isControl = true;
+    }
+
+    if(!isNumber && !isDash && !isControl) {
+      event.preventDefault();
+    }
+  });
+}
+
+
+
