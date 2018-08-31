@@ -231,7 +231,8 @@ function init() {
   }
 }
 
-// player
+
+//player
 
 let player;
 
@@ -239,7 +240,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
     width: "660",
     height: "405",
-    videoId: "LFSVO-iKFgY",
+    videoId: "gsMckzBclAs",
     playerVars: {
       controls: 0,
       disablekb: 0,
@@ -288,7 +289,7 @@ function onPlayerStateChange(event) {
 }
 
 $(".player__start").on("click", e => {
-  const playerStatus = player.getPlayerState(); 
+  const playerStatus = player.getPlayerState();
 
   if (playerStatus !== 1) {
     player.playVideo();
@@ -330,9 +331,11 @@ function formatTime(time) {
   const minutes = Math.floor(roundTime / 60);
   const seconds = roundTime - minutes * 60;
   const formatedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
   return minutes + ":" + formatedSeconds;
 }
 
+ 
 
 // onePageScroll
 
@@ -342,8 +345,6 @@ let inScroll = false;
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
-
-
 
 body.addEventListener('wheel', (e) => {
 
@@ -356,8 +357,6 @@ body.addEventListener('wheel', (e) => {
   scrollToSection(sectionIndex);
 
 });
-
-
 
 function getScrollIndex(direction) {
   
@@ -463,7 +462,7 @@ function scrollToSection(index) {
   
   setTimeout(() => {
     inScroll = false;
-  }, 1300); // продолжительность анимации + 300ms - потому что закончится инерция
+  }, 700);
 
 }
 
@@ -481,34 +480,3 @@ if (isMobile) {
     }
   });
 }
-
-// Отмена ввода букв в поля 
-const numberInputs = document.querySelectorAll('[data-type="number"]');
-
-for(let i = 0; i < numberInputs.length; i++) {
-  numberInputs[i].addEventListener('keydown', (event) => {
-
-    let isNumber = false;
-    let isDash = false; 
-    let isControl = false;
-
-    if(event.key >= 0 || event.key <= 9 ) {
-      isNumber = true;
-    }
-
-    if(event.key == '-') {
-      isDash = true;
-    }
-
-    if(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace') {
-      isControl = true;
-    }
-
-    if(!isNumber && !isDash && !isControl) {
-      event.preventDefault();
-    }
-  });
-}
-
-
-
