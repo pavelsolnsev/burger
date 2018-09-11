@@ -138,8 +138,9 @@ form.addEventListener("order__button", (e) => {
   }
   let xhr = new XMLHttpRequest();
   
-  xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-  xhr.send(JSON.stringify(data));
+  xhr.responseType = 'json';
+  xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+  xhr.send(data);
   xhr.addEventListener('load', () => {
 
     if(xhr.status < 400) {
