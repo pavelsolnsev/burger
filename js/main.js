@@ -126,7 +126,7 @@ const orderPopup = document.querySelector('.order-popup');
 const orderPopupButton = document.querySelector('.order-popup__button');
 const orderPopupText = document.querySelector('.order-popup__text');
 
-form.addEventListener("order__button", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   e.stopPropagation();
 
